@@ -38,8 +38,14 @@ h1 {
 	padding: 2em 0;
 }
 
-input {
+#mc_embed_signup {
+	clear:left;
+}
+
+#mc_embed_signup_scroll {
+	width: 75%;
 	margin: auto;
+	text-align: center;
 }
 
 #footer {
