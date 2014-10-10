@@ -39,6 +39,7 @@ h1 {
 }
 
 #mc_embed_signup {
+	clear:left;
 	width: 75%;
 	margin: auto;
 }
