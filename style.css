@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 1024px;
+    margin: auto;
+}
+
+#header {
+    text-align: center;
+}
