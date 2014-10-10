@@ -1,26 +1,43 @@
 html, body {
     margin: 0;
     padding: 0;
+	background-color: #f33;
+	text-align: center;
+	font-size: 1.25em;
 }
 
 p, h1, h2 {
     font-family: Helvetica, sans-serif;
-    text-shadow: 1px 1px 2px #333;
+    text-shadow: 1px 1px 4px #333;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color: #fff;
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 4em;
     font-weight: bold;
-    color: #f00;
+    color: #f33;
 }
 
 #wrap {
-    width: 1024px;
+    width: 100%;
     margin: auto;
 }
 
 #header {
-    width: 100%;
-    text-align: center;
     background-color: #444;
+	padding: 2em;
+}
+
+.content {
+	margin-top: 2em;
+	padding: 2em;
+}
+
+#footer {
+	padding: 2em;
 }
