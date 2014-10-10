@@ -30,14 +30,14 @@ h1 {
 
 #header {
     background-color: #444;
-	padding: 2em;
+	padding: 2em 0;
 }
 
 .content {
 	margin-top: 2em;
-	padding: 2em;
+	padding: 2em 0;
 }
 
 #footer {
-	padding: 2em;
+	padding: 2em 0;
 }
