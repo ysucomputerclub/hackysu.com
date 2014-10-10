@@ -38,6 +38,11 @@ h1 {
 	padding: 2em 0;
 }
 
+#mc_embed_signup {
+	width: 75%;
+	margin: auto;
+}
+
 #footer {
 	padding: 2em 0;
 }
