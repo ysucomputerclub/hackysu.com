@@ -42,10 +42,8 @@ h1 {
 	clear:left;
 }
 
-#mc_embed_signup_scroll {
-	width: 75%;
+#mc_embed_signup input {
 	margin: auto;
-	text-align: center;
 }
 
 #footer {
