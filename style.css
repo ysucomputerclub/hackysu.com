@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+	background-color: #f33;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+p, h1, h2 {
+    font-family: Helvetica, sans-serif;
+    text-shadow: 1px 1px 4px #333;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color: #fff;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #f33;
+}
+
+#wrap {
+    width: 100%;
+    margin: auto;
+}
+
+#header {
+    background-color: #444;
+	padding: 2em;
+}
+
+.content {
+	margin-top: 2em;
+	padding: 2em;
+}
+
+#footer {
+	padding: 2em;
+}
