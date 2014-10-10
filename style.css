@@ -3,11 +3,24 @@ html, body {
     padding: 0;
 }
 
+p, h1, h2 {
+    font-family: Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px #333;
+}
+
+h1 {
+    font-size: 8em;
+    font-weight: bold;
+    color: #f00;
+}
+
 #wrap {
     width: 1024px;
     margin: auto;
 }
 
 #header {
+    width: 100%;
     text-align: center;
+    background-color: #444;
 }
