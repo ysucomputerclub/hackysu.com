@@ -51,6 +51,11 @@ h2 {
 	margin: auto;
 }
 
+input[type=text] {
+	font-size: 1.5em;
+	text-align: center;
+}
+
 #footer {
 	padding: 2em 0;
 }
