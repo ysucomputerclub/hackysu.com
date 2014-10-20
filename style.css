@@ -57,6 +57,10 @@ input[type=email] {
 	border-radius: 0.25em;
 }
 
+input[type=submit]{
+	font-size: 1.5em;
+}
+
 #footer {
 	padding: 2em 0;
 }
