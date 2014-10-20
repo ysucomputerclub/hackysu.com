@@ -51,7 +51,7 @@ h2 {
 	margin: auto;
 }
 
-input[type=text] {
+input[type=email] {
 	font-size: 1.5em;
 	text-align: center;
 }
