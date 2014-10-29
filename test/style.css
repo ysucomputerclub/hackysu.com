@@ -3,7 +3,7 @@ html, body {
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #d21f26;
-	background-image: url('background.png');
+	background-image: url('test/background.png');
 	background-attachment: fixed;
 	text-align: center;
 }
@@ -74,7 +74,7 @@ li {
 
 #quickinfo {
 	width: 100%;
-	background-image: url("city.png");
+	background-image: url("test/city.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #fff;
