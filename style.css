@@ -101,6 +101,12 @@ li {
 	box-shadow: inset 0 0 1em #000;
 }
 
+.wideImage {
+	display: inline-block;
+	height: 8em;
+	margin: 0.25em;
+}
+
 .icons {
 	width: 100%;
 }
