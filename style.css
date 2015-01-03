@@ -17,7 +17,7 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 4em;
 }
 
 p, h3 {
@@ -35,25 +35,20 @@ a:hover {
 	color: #fff;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	text-align: center;
-}
-
-li {
-	display: inline-block;
-	margin: 0.25em;
-	padding: 0.25em;
-}
-
 #header {
 	position: fixed;
 	top: 0;
 	width: 100%;
 	background-color: #000;
 	color: #fff;
+}
+
+#header p {
+	margin: 1em;
+}
+
+#header a {
+	margin: 0 0.5em;
 }
 
 #logo {
@@ -91,8 +86,13 @@ li {
 	padding: 4em 2em;
 }
 
+#faq > .pure-g > div {
+
+}
+
 .faqItem {
 	text-align: left;
+	height: 100%;
 	margin: 1em;
 	padding: 1em;
 	color: #fff;

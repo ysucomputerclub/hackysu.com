@@ -4,10 +4,20 @@
 		<meta name="description" content="The first offical Youngstown State Universty Hackathon Event started and supported by students who strive to innovate and create." />
 		<meta name="keywords" content="hackathon, coding, programming, game jam" />
 		<title>HackYSU</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,800,400|Oswald:400,700' rel='stylesheet' type='text/css'>
-		<link href='style.css' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,800,400|Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="grid-old-ie.css">
+		<![endif]-->
+		<!--[if gt IE 8]><!-->
+			<link rel="stylesheet" href="grid.css">
+		<!--<![endif]-->
+		
 		<!-- We need to set up social media cards ASAP
 		<meta property="og:title" content="DEFACID"/>
 		<meta property="og:type" content="website"/>
@@ -27,13 +37,12 @@
 	</head>
 	<body>
 		<div id="header">
-			<ul>
-				<li><p><a href="#top">Top</a></p></li>
-				<li><p><a href="#faq">FAQ</a></p></li>
-				<li><p><a href="#sponsors">Sponsors</a></p></li>
-				<li><p><a href="#affiliates">Affiliates</a></p></li>
-				<li><p><a href="#social">Contact Us</a></p></li>
-			</ul>
+			<p><a href="#top">Top</a>
+			<a href="#faq">FAQ</a>
+			<a href="#sponsors">Sponsors</a>
+			<a href="#affiliates">Affiliates</a>
+			<a href="#social">Contact Us</a></p>
+			</div>
 		</div>
 		<div id="wrap">
 			<div id="top" />
@@ -59,49 +68,70 @@
 			</div>
 			<div id="faq" class="content">
 				<h2>Frequently Asked Questions</h2>
-				<div class="faqItem">
-					<h3>What is HackYSU?</h3>
-					<p>HackYSU is a hackathon, an event where students come together to Learn, Create, and Network with each other and businesses.</p>
-				</div>
-				<div class="faqItem">
-					<h3>What do people do at hackathons?</h3>
-					<p>Students will have 24 or 36 hours to create anything they want – software, hardware, a business plan, art, a design, anything – which will be exhibited in a showcase at the end.</p>
-				</div>
-				<div class="faqItem">
-					<h3>Does it cost anything to participate?</h3>
-					<p>HackYSU will not only be free to attend, but we'll supply food, energy drinks, and even some travel reimbursement for those who qualify.</p>
-				</div>
-				<div class="faqItem">
-					<h3>Are there any rules?</h3>
-					<p>Participants must be currently enrolled in a university to participate. Also, in order to qualify for prizes, all showcased work must be original to the hackathon – code, build, and create here. It's okay to plan a bit beforehand, though!</p>
-				</div>
-				<div class="faqItem">
-					<h3>Is this a competition?</h3>
-					<p>Though HackYSU will have prizes for top hacks in certain categories, as long as you learned, created, or networked, you've achieved what the HackYSU team has set out to do.</p>
-				</div>
-				<div class="faqItem">
-					<h3>Do I need to be able to code?</h3>
-					<p>No! Not only is HackYSU not a programming only event, it is an educational experience. Pros and newbies alike are invited to expand their skill set and make something awesome.</p>
-				</div>
-				<div class="faqItem">
-					<h3>How do teams work?</h3>
-					<p>Official teams will consist of four or less people. Teams can be spontaneously created at the event or set beforehand during registration.</p>
-				</div>
-				<div class="faqItem">
-					<h3>What should I bring?</h3>
-					<p>Bring your student ID, laptop, chargers, and everything you need to be a decent human being for 36 hours. That includes toiletries and sleeping materials. Showers may or may not be available.</p>
-				</div>
-				<div class="faqItem">
-					<h3>Have another question?</h3>
-					<p>Email us at <a href="mailto:contact@hackysu.com">contact@hackysu.com</a>.</p>
+				<div class="pure-g">
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>What is HackYSU?</h3>
+							<p>HackYSU is a hackathon, an event where students come together to Learn, Create, and Network with each other and businesses.</p>
+						</div>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>What do people do at hackathons?</h3>
+							<p>Students will have 24 or 36 hours to create anything they want – software, hardware, a business plan, art, a design, anything – which will be exhibited in a showcase at the end.</p>
+						</div>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>Does it cost anything to participate?</h3>
+							<p>HackYSU will not only be free to attend, but we'll supply food, energy drinks, and even some travel reimbursement for those who qualify.</p>
+						</div>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>Are there any rules?</h3>
+							<p>Participants must be currently enrolled in a university to participate. Also, in order to qualify for prizes, all showcased work must be original to the hackathon – code, build, and create here. It's okay to plan a bit beforehand, though!</p>
+						</div>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>Is this a competition?</h3>
+							<p>Though HackYSU will have prizes for top hacks in certain categories, as long as you learned, created, or networked, you've achieved what the HackYSU team has set out to do.</p>
+						</div>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>Do I need to be able to code?</h3>
+							<p>No! Not only is HackYSU not a programming only event, it is an educational experience. Pros and newbies alike are invited to expand their skill set and make something awesome.</p>
+						</div>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>How do teams work?</h3>
+							<p>Official teams will consist of four or less people. Teams can be spontaneously created at the event or set beforehand during registration.</p>
+						</div>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>What should I bring?</h3>
+							<p>Bring your student ID, laptop, chargers, and everything you need to be a decent human being for 36 hours. That includes toiletries and sleeping materials. Showers may or may not be available.</p>
+						</div>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+						<div class="faqItem">
+							<h3>Have another question?</h3>
+							<p>Email us at <a href="mailto:contact@hackysu.com">contact@hackysu.com</a>.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="sponsors" class="content">
 				<h2>SPONSORS</h2>
 				<img class="wideImage" src="images/sgaSeal.png">
+				<img class="wideImage" src="images/mlh.png">
 				<p>If you are interested in joining us as a Sponsor, <a href="mailto:contact@hackysu.com">contact us</a> for more information!</p>
 				<!-- SPONSORS WILL GO HERE WHEN WE GET SOME
-				<img src="sponsors/google.png">
+				
 				<img src="sponsors/microsoft.png">
 				-->
 			</div>
@@ -120,11 +150,9 @@
 			</div>
 			<div id="social" class="content">
 				<h2>SOCIALIZE WITH US</h2>
-				<ul class="icons">
-					<li><a href="https://www.facebook.com/hackysu"><img src="images/facebook.png"></a></li>
-					<li><a href="https://twitter.com/HackYSU"><img src="images/twitter.png"></a></li>
-					<!--<li><img src="images/googleplus.png"></li>-->
-				</ul>
+					<a href="https://www.facebook.com/hackysu"><img src="images/facebook.png"></a>
+					<a href="https://twitter.com/HackYSU"><img src="images/twitter.png"></a>
+					<!--<img src="images/googleplus.png">-->
 				<div style="clear: both;" />
 				<h3>Any questions that weren't answered in the <a href="#faq">FAQ's</a>?
 				<br />Send us an <a href="mailto:contact@hackysu.com">email</a> and we'll get back to you soon!
