@@ -94,19 +94,20 @@ a:hover {
 	width: 100%;
 	background-image: url("city.png");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;z
 	color: #fff;
 	padding-top: 3em;
 }
 
 #quickinfo p {
+	color: #fff;
 	margin-top: 0.5em;
 }
 
 
 .content {
 	margin: 1em;
-	padding: 4em 2em;
+	padding: 4em 1em;
 }
 
 .faqItem {
@@ -121,6 +122,12 @@ a:hover {
 .wideImage {
 	display: inline-block;
 	height: 12em;
+	margin: 0.25em;
+}
+
+.smallImage {
+	display: inline-block;
+	height: 6em;
 	margin: 0.25em;
 }
 
