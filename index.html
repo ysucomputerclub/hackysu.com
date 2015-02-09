@@ -67,6 +67,12 @@
 					</form>
 				</div></p>
 			</div>
+			<script>
+				$(document).on("click", ".faqItem", function(event){
+					event.preventDefault();
+					$(this).children('p').toggle(200);
+				});
+			</script>
 			<div id="faq" class="content">
 				<h2>Frequently Asked Questions</h2>
 				<div class="pure-g">
