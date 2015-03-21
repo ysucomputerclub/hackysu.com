@@ -69,6 +69,8 @@
 				</div></p>
 			</div>
 			<script>
+				$(".faqTitle").next("p").hide();
+
 				$(document).on("click", ".faqTitle", function(event){
 					event.preventDefault();
 					$(this).next('p').toggle(200);

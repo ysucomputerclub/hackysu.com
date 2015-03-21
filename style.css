@@ -128,11 +128,14 @@ a:hover {
 	margin: 0.5em;
 	background-color: #000;
 	border-radius: 0.5em;
-    cursor: pointer;
 }
 
 .faqItem p {
 	margin-top: 0.5em;
+}
+
+.faqTitle {
+	cursor: pointer;
 }
 
 #sponsors, #affiliates {
