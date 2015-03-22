@@ -85,13 +85,13 @@
 				<div class="pure-g">
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>What is HackYSU?</h3>
+							<h3 class="faqTitle">What is HackYSU?</h3>
 							<p class="hideMe">HackYSU is a hackathon, an event where students come together to Learn, Create, and Network with each other and businesses.</p>
 						</div>
 					</div>
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>What do people do at hackathons?</h3>
+							<h3 class="faqTitle">What do people do at hackathons?</h3>
 							<p class="hideMe">Students will have 24 or 36 hours to create anything they want – software, hardware, a business plan, art, a design, anything – which will be exhibited in a showcase at the end.</p>
 						</div>
 					</div>
@@ -99,13 +99,13 @@
 				<div class="pure-g">
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>Does it cost anything to participate?</h3>
+							<h3 class="faqTitle">Does it cost anything to participate?</h3>
 							<p class="hideMe">HackYSU will not only be free to attend, but we'll supply food, energy drinks, and even some travel reimbursement for those who qualify.</p>
 						</div>
 					</div>
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>Are there any rules?</h3>
+							<h3 class="faqTitle">Are there any rules?</h3>
 							<p class="hideMe">Participants must be currently enrolled in a university to participate. Also, in order to qualify for prizes, all showcased work must be original to the hackathon – code, build, and create here. It's okay to plan a bit beforehand, though!
 							<br /><br />We also observe and enforce the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.</p>
 						</div>
@@ -114,13 +114,13 @@
 				<div class="pure-g">
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>Is this a competition?</h3>
+							<h3 class="faqTitle">Is this a competition?</h3>
 							<p class="hideMe">Though HackYSU will have prizes for top hacks in certain categories, as long as you learned, created, or networked, you've achieved what the HackYSU team has set out to do.</p>
 						</div>
 					</div>
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>Do I need to be able to code?</h3>
+							<h3 class="faqTitle">Do I need to be able to code?</h3>
 							<p class="hideMe">No! Not only is HackYSU not a programming only event, it is an educational experience. Pros and newbies alike are invited to expand their skill set and make something awesome.</p>
 						</div>
 					</div>
@@ -128,19 +128,19 @@
 				<div class="pure-g">
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>How do teams work?</h3>
+							<h3 class="faqTitle">How do teams work?</h3>
 							<p class="hideMe">Official teams will consist of four or less people. Teams can be spontaneously created at the event or set beforehand during registration.</p>
 						</div>
 					</div>
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>What should I bring?</h3>
+							<h3 class="faqTitle">What should I bring?</h3>
 							<p class="hideMe">Bring your student ID, laptop, chargers, and everything you need to be a decent human being for 36 hours. That includes toiletries and sleeping materials. Showers may or may not be available.</p>
 						</div>
 					</div>
 					<div class="pure-u-1 pure-u-md-1-2">
 						<div class="faqItem">
-							<h3>Have another question?</h3>
+							<h3 class="faqTitle">Have another question?</h3>
 							<p class="hideMe">Email us at <a href="mailto:contact@hackysu.com">contact@hackysu.com</a>.</p>
 						</div>
 					</div>
@@ -148,9 +148,9 @@
 			</div>
 			<script>
 				$(".hideMe").hide(200);
-				$(document).on("click", ".faqItem", function(event){
+				$(document).on("click", ".faqTitle", function(event){
 					event.preventDefault();
-					$(this).children('p').toggle(200);
+					$(this).next("p").toggle(200);
 				});
 			</script>
 			<div id="sponsors" class="content">

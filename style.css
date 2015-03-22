@@ -134,6 +134,10 @@ a:hover {
 	margin-top: 0.5em;
 }
 
+.faqTitle {
+	cursor: pointer;
+}
+
 #sponsors, #affiliates {
 	background-color: #000;
 	color: #888;
