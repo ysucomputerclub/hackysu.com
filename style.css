@@ -107,6 +107,7 @@ a:hover {
 	background-attachment: fixed;
 	color: #fff;
 	padding-top: 3em;
+	padding-bottom: 2em;
 	text-shadow: 2px 2px 12px #333;
 }
 
@@ -130,8 +131,11 @@ a:hover {
 }
 
 .faqItem p {
-	display: none;
 	margin-top: 0.5em;
+}
+
+.faqTitle {
+	cursor: pointer;
 }
 
 #sponsors, #affiliates {
