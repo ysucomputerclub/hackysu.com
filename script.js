@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	    e.preventDefault();
 
-	    var target = this.hash;
+	    var target = this.hash,
 
 	    $target = $(target);
 
