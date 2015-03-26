@@ -116,6 +116,11 @@ a:hover {
 	margin-top: 0.5em;
 }
 
+.signup {
+	border: 3px solid #fff;
+	border-radius: 0.25em;
+	padding: 0 0.25em;
+}
 
 .content {
 	padding: 4em 1em;
