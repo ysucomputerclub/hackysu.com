@@ -150,29 +150,22 @@ a:hover {
 
 .titleSponsor {
 	display: inline-block;
-	height: 20em;
-	margin: 0.25em;
+	height: 16em;
+	margin: 0.5em;
 	border-radius: 50%;
 }
 
 .pSponsor {
 	display: inline-block;
-	height: 16em;
-	margin: 0.25em;
+	height: 12em;
+	margin: 0.5em;
 	border-radius: 50%;
 }
 
 .gSponsor {
 	display: inline-block;
-	height: 12em;
-	margin: 0.25em;
-	border-radius: 50%;
-}
-
-.sSponsor {
-	display: inline-block;
 	height: 10em;
-	margin: 0.25em;
+	margin: 0.5em;
 	border-radius: 50%;
 }
 
@@ -207,6 +200,7 @@ a img:hover {
 }
 
 #footer {
+	font-size: 0.5em;
 	color: #fff;
 	margin-bottom: 1em;
 }
