@@ -89,6 +89,13 @@ a:hover {
 	position: fixed;
 }
 
+.anchor {
+	display: block;
+	position: relative;
+	top: -3em;
+	visibility: hidden;
+}
+
 .faqItem, .hideMe {
 	text-align: left;
 	color: #fff;

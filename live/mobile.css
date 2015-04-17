@@ -83,7 +83,14 @@ a:hover {
 	top: 2em;
 }
 
-.faqItem {
+.anchor {
+	display: block;
+	position: relative;
+	top: -3em;
+	visibility: hidden;
+}
+
+.faqItem, .hideMe {
 	text-align: left;
 	color: #fff;
 	padding: 1em;
@@ -98,6 +105,10 @@ a:hover {
 
 .faqTitle {
 	cursor: pointer;
+}
+
+ul li {
+	margin: 0.25em;
 }
 
 a img {
