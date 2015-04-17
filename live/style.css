@@ -113,6 +113,10 @@ a:hover {
 	cursor: pointer;
 }
 
+ul li {
+	margin: 0.5em;
+}
+
 a img {
 	transition: all 0.5s ease;
 }
@@ -128,5 +132,5 @@ a img:hover {
 }
 
 .logo {
-	width: 3em;
+	width: 5em;
 }
