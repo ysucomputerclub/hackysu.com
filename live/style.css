@@ -1,0 +1,125 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #d21f26;
+	background-image: url('../background.png');
+	text-align: center;
+}
+
+h1, h2 {
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	color: #fff;
+}
+
+h1 {
+	padding: 0;
+	font-weight: 700;
+	font-size: 4em;
+}
+
+h1.large {
+	font-size: 5em;
+}
+
+h2 {
+	padding: 0;
+}
+
+h2.thin {
+	font-weight: 400;
+}
+
+p, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+a, a:visited {
+	transition: color .25s;
+	color: #bbb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+#header {
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+}
+
+#header p {
+	margin: 0.5em;
+}
+
+#header a {
+	padding: 1em;
+	margin: 0 0.5em;
+}
+
+#header img {
+	height: 1em;
+}
+
+#wrap {
+	width: 100%;
+}
+
+.content {
+	padding: 3em 1em;
+}
+
+.twitter{
+	float: left;
+	width: 40%;
+	margin: 0 2em;
+	height: 50%;
+	z-index: 1;
+	text-align: left;
+	top: 2em;
+	position: fixed;
+}
+
+.faqItem, .hideMe {
+	text-align: left;
+	color: #fff;
+	padding: 1em;
+	margin-bottom: 0.5em;
+	background-color: #000;
+	border-radius: 0.5em;
+}
+
+.faqItem p {
+	margin-top: 0.5em;
+}
+
+.faqTitle {
+	cursor: pointer;
+}
+
+a img {
+	transition: all 0.5s ease;
+}
+
+a img:hover {
+	opacity: .75;
+}
+
+#footer {
+	font-size: 0.5em;
+	color: #fff;
+	margin-bottom: 1em;
+}
+
+.logo {
+	width: 3em;
+}
