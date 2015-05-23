@@ -88,7 +88,7 @@ a:hover {
 	font-size: 1.25em;
 	color: #fff;
 	border-radius: 0.5em;
-	background-color: #222; 
+	background-color: #222;
 	border-color: #000;
 	border-style: solid;
 	outline: none;
@@ -120,6 +120,8 @@ a:hover {
 	border: 3px solid #fff;
 	border-radius: 0.25em;
 	padding: 0 0.25em;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
 }
 
 .content {
