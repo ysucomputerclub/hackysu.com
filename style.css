@@ -1,209 +1,295 @@
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif;
-	background-color: #d21f26;
-	background-image: url('background.png');
-	text-align: center;
+
+*, *:after, *:before  {
+outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
 }
 
-h1, h2 {
-	margin: 0;
-	font-family: 'Oswald', sans-serif;
+html {
 	text-align: center;
-	color: #fff;
+	color: #191d29;
+	background-color: #535d69;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+p {
+	font-family: 'Open Sans';
+	font-size: 1.2em;
 }
 
 h1 {
-	padding: 0;
-	font-weight: 700;
-	font-size: 4em;
-}
-
-h1.large {
-	font-size: 5em;
+	font-family: 'Arvo';
 }
 
 h2 {
-	padding: 0;
-}
-
-h2.thin {
-	font-weight: 400;
-}
-
-p, h3 {
+	font-family: 'Arvo';
 	margin: 0;
 	padding: 0;
+	font-size: 3em;
 }
 
-a, a:visited {
-	transition: color .25s;
-	color: #bbb;
+h3 {
+	font-family: 'Arvo';
+	margin: 0;
+	padding: 0.25em;
+	font-size: 1.5em;
+}
+
+a {
+	display: inline-block;
+	transition: all 0.2s;
+	color: #fff;
 	text-decoration: none;
+	text-shadow: 1px 2px 7px #000;
 }
 
 a:hover {
-	color: #fff;
+	color: #f6dc6c;
 }
 
-#header {
-	z-index: 2;
+#header { 
+	z-index: 10;
+	transition: all 0.2s;
 	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: #000;
-	color: #fff;
-}
-
-#header p {
-	margin: 0.5em;
-}
-
-#header a {
-	margin: 0 0.5em;
-}
-
-#logo {
-	margin-bottom: -4em;
-}
-
-#logo img {
-	width: 8em;
-}
-
-#wrap {
-	width: 100%;
-}
-
-#top {
-	padding-top: 4em;
-}
-
-.button {
-	transition: all 0.25s ease;
-	margin: 5px auto;
-	padding: 0.25em 1em;
-	font-size: 1.25em;
-	color: #fff;
-	border-radius: 0.5em;
-	background-color: #222;
-	border-color: #000;
-	border-style: solid;
-	outline: none;
-	cursor: pointer;
-	box-shadow: inset 0 0.25em 1em #444;
-}
-
-.button:hover {
-	background-color: #777;
-}
-
-#quickinfo {
-	width: 100%;
-	background-image: url("city.png");
-	background-size: cover;
-	background-attachment: fixed;
-	color: #fff;
-	padding-top: 3em;
-	padding-bottom: 2em;
-	text-shadow: 2px 2px 12px #333;
-}
-
-#quickinfo p {
-	color: #fff;
-	margin-top: 0.5em;
-}
-
-.signup {
-	border: 3px solid #fff;
-	border-radius: 0.25em;
-	padding: 0 0.25em;
-	margin-left: 0.25em;
-	margin-right: 0.25em;
-	display: inline-block;
-}
-
-.content {
-	padding: 4em 1em;
-}
-
-.faqItem {
-	text-align: left;
-	color: #fff;
-	padding: 1em;
-	margin: 0.5em;
-	background-color: #000;
-	border-radius: 0.5em;
-}
-
-.faqItem p {
-	margin-top: 0.5em;
-}
-
-.faqTitle {
-	cursor: pointer;
-}
-
-#sponsors, #affiliates {
-	background-color: #000;
-	color: #888;
-}
-
-.titleSponsor {
-	display: inline-block;
-	height: 16em;
-	margin: 0.5em;
-	border-radius: 50%;
-}
-
-.pSponsor {
-	display: inline-block;
-	height: 12em;
-	margin: 0.5em;
-	border-radius: 50%;
-}
-
-.gSponsor {
-	display: inline-block;
-	height: 10em;
-	margin: 0.5em;
-	border-radius: 50%;
-}
-
-.smallImage {
-	display: inline-block;
-	height: 6em;
-	margin: 0.25em;
-	border-radius: 50%;
-}
-
-.icons {
-	width: 100%;
-	border-radius: 50%;
-}
-
-.icons li img {
-	width: 1em;
+	margin: -1em 0 0;
 	padding: 0.5em;
 }
 
-.icons li img {
-	width: 2em;
-	padding: 0;
+#header a {
+	margin: 0 .5em;
 }
 
-a img {
-	transition: all 0.5s ease;
+.tag {
+	height: 1px;
 }
 
-a img:hover {
-	opacity: .75;
+.content:first-of-type {
+	margin-top: 4em;
 }
 
-#footer {
-	font-size: 0.5em;
-	color: #fff;
+.content {
+	position: relative;
+	z-index: 2;
+	width: 90%;
+	margin: 6em auto;
+	padding: 2em;
+	background-color: #191d29;
+	color: #535d69;
+}
+
+.content:before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -4em;
+	width: 100%;
+	height: 8em;
+	transform: skewY(-2deg);
+	-moz-transform: skewY(-2deg);
+	-webkit-transform: skewY(-2deg);
+	background-color: #191d29;
+}
+
+.content:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin-top: -4em;
+	width: 100%;
+	height: 8em;
+	transform: skewY(-2deg);
+	-moz-transform: skewY(-2deg);
+	-webkit-transform: skewY(-2deg);
+	background-color: #191d29;
+}
+
+.content > h2 {
+	color: #f05c2d;
 	margin-bottom: 1em;
+}
+
+
+#top {
+	height: 50em;
+	margin-bottom: -44em;
+	background: linear-gradient(to bottom, rgba(25,29,41, 1) 0%, rgba(25,29,41, 0) 100%);
+}
+
+#logo {
+	width: 50%;
+	max-width: 30em;
+}
+
+.faqItem {
+	transition: all 0.2s;
+	cursor: pointer;
+	margin: 1em 3em;
+}
+
+.faqItem:first-child {
+	margin-top: 0;
+}
+
+.faqItem:hover {
+	color: #aaa;
+}
+
+.faqItem .icon {
+	display: inline-block;
+	margin-right: 0.5em;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	transition: all 0.25s;
+	-moz-transition: all 0.25s;
+}
+
+.active .icon {
+	transform: scale(0.75) rotate(-90deg);
+	-moz-transform: scale(0.75) rotate(-90deg);
+	-webkit-transform: scale(0.75) rotate(-90deg);
+}
+
+.clear {
+	clear: both;
+}
+
+.time {
+	transition: all 0.2s;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 0.5em;
+	color: #fff;
+	background-color: #535d69;
+}
+
+.time:hover {
+	background-color: #fff;
+	color: #535d69;
+}
+
+.time h3 {
+	position: absolute;
+	margin: 0.5em;
+}
+
+.time p {
+	margin: 0.5em 2em;
+	padding: 0.5em 1.5em;
+}
+
+#map {
+	display: block;
+	width: 100%;
+	height: 40em;
+	max-width: 800px;
+	padding: 1em;
+	margin: auto;
+	background-color: #fff;
+	box-shadow: 1px 3px 7px #000;
+}
+
+.sponsor {
+	opacity: 0.8;
+	width: 10em;
+}
+
+.titleSponsor {
+	width: 15em;
+}
+
+.sponsor:hover {
+	opacity: 1;
+	margin: 0 0.5em;
+}
+
+.sponsor img {
+	width: 100%;
+}
+
+.social .icon {
+	display: inline-block;
+	margin: 0.5em;
+	font-size: 2em;
+}
+
+.social .icon:hover {
+	margin-left: 0.75em;
+	margin-right: 0.75em;
+}
+
+@media screen and (min-width: 1024px) {
+	.left {
+		padding-left: 4em;
+		margin-left: -2em;
+	}
+
+	.right {
+		padding-right: 4em;
+		margin-right: -2em;
+	}
+	
+	.time p {
+		
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.faqItem {
+		margin: 1em;
+	}
+	
+	.time h3 {
+		position: relative;
+		float: none;
+	}
+	
+	#map {
+		height: 20em;
+	}
+	
+	.social .icon {
+		font-size: 1.5em;
+		margin: 0.5em;
+	}
+	
+	.social .icon:hover {
+		margin-left: 0.6em;
+		margin-right: 0.6em;
+	}
+	
+	#quickinfo {
+		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: .8em;
+	}
+	
+	.social .icon {
+		margin: 0.25em;
+	}
+	
+	.social .icon:hover {
+		margin-left: 0.4em;
+		margin-right: 0.4em;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	h2 {
+		font-size: 1.7em;
+	}
+	
+	.sponsor {
+		width: 10em;
+	}
 }
