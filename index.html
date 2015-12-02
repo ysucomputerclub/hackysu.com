@@ -169,6 +169,25 @@
 						window.location.hash = target;
 					});
 				});
+				
+				// with jQuery - Temporary Metadata Scrape Update Code
+				$.post(
+					'https://graph.facebook.com',
+					{
+						id: '<?php echo $url; ?>',
+						scrape: true
+					},
+					function(response){
+						console.log(response);
+					}
+				);
+
+				// with "vanilla" javascript
+				var fbxhr = new XMLHttpRequest();
+				fbxhr.open("POST", "https://graph.facebook.com", true);
+				fbxhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				fbxhr.send("id=<?php echo $url; ?>&scrape=true");
+				// END TEMP SCRIPT
 			</script>
 			<div id="itinerary" class="tag"></div>
 			<div class="content right">
