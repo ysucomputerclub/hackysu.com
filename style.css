@@ -51,6 +51,18 @@ a:hover {
 	color: #f6dc6c;
 }
 
+#mlh-trust-badge {
+	transition: all 0.2s;
+	position: fixed;
+	top: 0;
+	right: 50px;
+	max-width: 100px;
+	width: 10%;
+	min-width: 60px;
+	display: block;
+	z-index: 10000;
+}
+
 #header { 
 	z-index: 10;
 	transition: all 0.2s;
@@ -61,6 +73,16 @@ a:hover {
 
 #header a {
 	margin: 0 .5em;
+}
+
+.signup {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.mentor-signup {
+	font-size: .7em;
+	font-weight: bold;
 }
 
 .tag {
@@ -241,6 +263,14 @@ a:hover {
 }
 
 @media screen and (max-width: 1023px) {
+	#mlh-trust-badge {
+		right: 8px;
+	}
+	
+	.mentor-signup {
+		font-size: 1em;
+	}
+	
 	.faqItem {
 		margin: 1em;
 	}
@@ -269,9 +299,13 @@ a:hover {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	html {
 		font-size: .8em;
+	}
+	
+	#header p{
+		padding-right: 70px;
 	}
 	
 	.social .icon {
