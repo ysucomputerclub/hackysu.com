@@ -81,8 +81,20 @@ a:hover {
 }
 
 .mentor-signup {
-	font-size: .7em;
+	background-color: #191d29;
+	color: #535d69;
+	padding: 0.25em 0.5em;
+	font-size: .75em;
 	font-weight: bold;
+	border: solid 1px #535d69;
+	border-radius: 0.5em;
+	text-shadow: none;
+}
+
+.mentor-signup:hover {
+	color: #191d29;
+	background: none;
+	border: solid 1px #191d29;
 }
 
 .tag {
