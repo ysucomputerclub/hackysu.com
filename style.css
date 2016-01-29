@@ -80,6 +80,11 @@ a:hover {
 	font-weight: bold;
 }
 
+.signup-note {
+	margin-top: -0.5em;
+	padding-top: 0;
+}
+
 .mentor-signup {
 	background-color: #191d29;
 	color: #535d69;
