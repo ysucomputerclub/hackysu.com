@@ -162,16 +162,8 @@ a:hover {
 }
 
 #logo {
-	width: 25%;
+	width: 50%;
 	max-width: 30em;
-	min-width: 15em;
-}
-
-#titleSponsor {
-	width: 25%;
-	max-width: 30em;
-	min-width: 15em;
-	margin-bottom: 0.5em;
 }
 
 .faqItem {
@@ -247,6 +239,10 @@ a:hover {
 	-webkit-filter: grayscale(1);
 	opacity: 0.8;
 	width: 10em;
+}
+
+.titleSponsor {
+	width: 15em;
 }
 
 .sponsor:hover {
