@@ -9,6 +9,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Arvo|Open+Sans' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+		<div id="quicklinks" style="position: absolute; right: 0; text-align: right; font-size: 0.5em; padding: 1em;">
+			<a href="#twitter">TWITTER FEED</a>
+			<br/><a href="#emergency">EMERGENCY INFORMATION</a>
+		</div>
 		<div id="calendar">
 				<div class="hideToggle"><span>|||</span></div>
 			<iframe src="calendarPage.html" style="width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
@@ -17,6 +21,10 @@
 			<div id="header">
 				<img src="http://hackysu.com/logo2016.png">
 				<h3>LIVE</h3>
+			</div>
+			<div class="content">
+				<h2><a href="http://hackysu2016.devpost.com/" target="_BLANK">DEVPOST</a></h2>
+				<p>Submit your hack and browse through the other fantastic creations we've made today!</p>
 			</div>
 			<div class="twitter"><a class="twitter-timeline" height="600px" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/HackYSU" data-widget-id="588028278344122371">Tweets by @HackYSU</a></div>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -32,7 +40,7 @@
 					})
 				 });
 			</script>
-			<div id="emergency">
+			<div id="emergency" class="content">
 				<h2>Emergency Contacts</h2>
 				<p>Medical/Large Scale Emergencies</p>
 				<h3>Dial 911</h3>

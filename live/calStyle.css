@@ -29,7 +29,14 @@ p {
 	margin: 0;
 }
 
+a, a:visited{
+	text-decoration: none;
+	font-weight: bold;
+	color: #F6DC6C;
+}
+
 #calendar {
+	z-index: 3;
 	transition: all .2s;
 	position: fixed;
 	float: left;
@@ -41,6 +48,7 @@ p {
 	border-width:0;
 	margin: 0;
 	padding: 0;
+	box-shadow: 1px 1px 0 #012;
 }
 
 .open {
@@ -61,6 +69,8 @@ p {
 	background-color: #191d29;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
+	box-shadow: 1px -1px 0 #012,
+				1px 1px 0 #012;
 }
 
 .hideToggle span {
@@ -81,17 +91,69 @@ p {
 	padding-top: 1em;
 }
 
+.content {
+	position: relative;
+	z-index: 2;
+	width: 90%;
+	margin: 0.5em auto 1em;
+	padding: 1em;
+	background-color: #191d29;
+	color: #535d69;
+}
+
+.content:before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -2em;
+	width: 100%;
+	height: 4em;
+	transform: skewY(-2deg);
+	-moz-transform: skewY(-2deg);
+	-webkit-transform: skewY(-2deg);
+	background-color: #191d29;
+}
+
+.content:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin-top: -2em;
+	width: 100%;
+	height: 4em;
+	transform: skewY(-2deg);
+	-moz-transform: skewY(-2deg);
+	-webkit-transform: skewY(-2deg);
+	background-color: #191d29;
+}
+
+.content > h2 {
+	color: #f05c2d;
+	margin-bottom: 1em;
+}
+
+#header {
+	padding: 2em 0;
+}
+
 #header img {
 	width: 50%;
 	max-width: 12em;
 	min-width: 8em;
-	margin-top: 2em;
+	margin: 0 2em;
+}
+
+.twitter {
+	margin: 4em auto;
 }
 
 iframe[id^='twitter-widget-0'] {
 	height:600px !important;
 	margin-bottom:10px !important;
-	width:80% !important; 
+	width:90% !important; 
 }
 
 a.twitter-timeline {
@@ -103,8 +165,6 @@ a.twitter-timeline {
 }
 
 #emergency {
-	width: 80%;
-	margin: 0.5em auto 1em;
 	padding: 1em;
 	background-color: #191d29;
 	border-radius: 8px;
