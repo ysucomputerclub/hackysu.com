@@ -178,7 +178,7 @@ a.twitter-timeline {
 	display: inline-block;
 }
 
-@media handheld, screen and (max-width: 995px) {
+@media handheld, screen and (max-device-width: 995px) {
 	body {
 		font-size: 1.5em;
 	}

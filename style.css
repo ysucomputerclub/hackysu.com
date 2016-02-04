@@ -246,7 +246,8 @@ a:hover {
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
 	opacity: 0.8;
-	width: 10em;
+	width: 12em;
+	margin: 0.5em;
 }
 
 .sponsor:hover {
@@ -257,6 +258,10 @@ a:hover {
 
 .sponsor img {
 	width: 100%;
+}
+
+.food {
+	width: 8em;
 }
 
 .social .icon {
@@ -340,14 +345,15 @@ a:hover {
 		margin-left: 0.4em;
 		margin-right: 0.4em;
 	}
+	
+	.sponsor {
+		width: 6em;
+		margin: 0.25em;
+	}
 }
 
 @media screen and (max-width: 380px) {
 	h2 {
 		font-size: 1.7em;
-	}
-
-	.sponsor {
-		width: 10em;
 	}
 }
