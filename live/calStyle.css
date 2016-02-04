@@ -57,7 +57,6 @@ a, a:visited{
 }
 
 .hideToggle {
-	display: none;
 	transition: rotate .2s;
 	position: absolute;
 	left: 320px;
@@ -178,7 +177,13 @@ a.twitter-timeline {
 	display: inline-block;
 }
 
-@media handheld, screen and (max-device-width: 995px) {
+@media screen and (min-width: 996px) {
+	.hideToggle {
+		display: none;
+	}
+}
+
+@media handheld, screen and (max-device-width: 995px){
 	body {
 		font-size: 1.5em;
 	}
