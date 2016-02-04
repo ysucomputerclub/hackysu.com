@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Test Calendar Page</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<meta name="twitter:widgets:link-color" content="#f05c2d">
+		
+		<link href='calStyle.css' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arvo|Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="calendar">
+				<div class="hideToggle"><span>|||</span></div>
+			<iframe src="calendarPage.html" style="width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div id="wrap">
+			<div id="header">
+				<img src="http://hackysu.com/logo2016.png">
+				<h3>LIVE</h3>
+			</div>
+			<div class="twitter"><a class="twitter-timeline" height="600px" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/HackYSU" data-widget-id="588028278344122371">Tweets by @HackYSU</a></div>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			
+			<script>
+				 $(window).on('load', function () {
+					$('iframe[id^=twitter-widget-]').each(function () {
+						var head = $(this).contents().find('head');
+						if (head.length) {
+							head.append('<style>.timeline { max-width: 100% !important; width: 100% !important; } .timeline .stream { max-width: none !important; width: 100% !important; }</style>');
+						}
+						$('#twitter-widget-0').append($('<div class=timeline>'));
+					})
+				 });
+			</script>
+			<div id="emergency">
+				<h2>Emergency Contacts</h2>
+				<p>Medical/Large Scale Emergencies</p>
+				<h3>Dial 911</h3>
+				<p>Theft/Harassment/Crime</p>
+				<h3>YSU Police: <span class="stiff">330-941-3527</span></h3>
+				<p>MLH Anonymous Reporting</p>
+				<h3>Phone: +1 (409) 202-6060
+				<br/>Email: incidents@mlh.io</h3>
+			</div>
+			
+			<script>
+				var ww = $("#calendar").width();
+				if ($(window).width() <= 995) {
+					$("#calendar").css("left", -ww);
+				} else {
+					$("#calendar").addClass("open");
+					$("#wrap").css("padding-left", ww);
+				}
+				
+				$(".hideToggle").css("left", ww-1);
+				
+				$(".hideToggle").click(function(){
+					if ($(this).parent().hasClass("open")) {
+						$(this).parent().removeClass("open");
+					} else {
+						$(this).parent().addClass("open");
+					}
+				});
+				
+				$(window).resize(function(){
+					ww = $("#calendar").width();
+					$(".hideToggle").css("left", ww - 1);
+					
+					if ($("#calendar").hasClass("open") !== 1) {
+						$("#calendar").css("left", -ww);
+					}
+					
+					if ($(window).width() > 995) {
+						$("#calendar").addClass("open");
+						$("#wrap").css("padding-left", ww);
+						$("#calendar").css("left", "0");
+					} else {
+						$("#wrap").css("padding-left", "0");
+					}
+				});
+			</script>
+		</div>
+	</body>
+</html>
