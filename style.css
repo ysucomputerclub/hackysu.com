@@ -63,7 +63,7 @@ a:hover {
 	z-index: 10000;
 }
 
-#header { 
+#header {
 	z-index: 10;
 	transition: all 0.2s;
 	position: fixed;
@@ -76,8 +76,13 @@ a:hover {
 }
 
 .signup {
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: bold;
+}
+
+.signup-note {
+	margin-top: -0.5em;
+	padding-top: 0;
 }
 
 .mentor-signup {
@@ -157,8 +162,16 @@ a:hover {
 }
 
 #logo {
-	width: 50%;
+	width: 25%;
 	max-width: 30em;
+	min-width: 15em;
+}
+
+#titleSponsor {
+	width: 25%;
+	max-width: 30em;
+	min-width: 15em;
+	margin-bottom: 0.5em;
 }
 
 .faqItem {
@@ -236,10 +249,6 @@ a:hover {
 	width: 10em;
 }
 
-.titleSponsor {
-	width: 15em;
-}
-
 .sponsor:hover {
 	filter: grayscale(0);
 	-webkit-filter: grayscale(0);
@@ -271,9 +280,9 @@ a:hover {
 		padding-right: 4em;
 		margin-right: -2em;
 	}
-	
+
 	.time p {
-		
+
 	}
 }
 
@@ -281,34 +290,34 @@ a:hover {
 	#mlh-trust-badge {
 		right: 8px;
 	}
-	
+
 	.mentor-signup {
 		font-size: 1em;
 	}
-	
+
 	.faqItem {
 		margin: 1em;
 	}
-	
+
 	.time h3 {
 		position: relative;
 		float: none;
 	}
-	
+
 	#map {
 		height: 20em;
 	}
-	
+
 	.social .icon {
 		font-size: 1.5em;
 		margin: 0.5em;
 	}
-	
+
 	.social .icon:hover {
 		margin-left: 0.6em;
 		margin-right: 0.6em;
 	}
-	
+
 	#quickinfo {
 		font-size: .8em;
 	}
@@ -318,15 +327,15 @@ a:hover {
 	html {
 		font-size: .8em;
 	}
-	
+
 	#header p{
 		padding-right: 70px;
 	}
-	
+
 	.social .icon {
 		margin: 0.25em;
 	}
-	
+
 	.social .icon:hover {
 		margin-left: 0.4em;
 		margin-right: 0.4em;
@@ -337,7 +346,7 @@ a:hover {
 	h2 {
 		font-size: 1.7em;
 	}
-	
+
 	.sponsor {
 		width: 10em;
 	}
