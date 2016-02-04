@@ -146,7 +146,7 @@ a, a:visited{
 	margin: 0 2em;
 }
 
-.twitter {
+#twitter {
 	margin: 4em auto;
 }
 
@@ -181,6 +181,10 @@ a.twitter-timeline {
 @media handheld, screen and (max-device-width: 995px) {
 	body {
 		font-size: 1.5em;
+	}
+	
+	#calendar {
+		font-size: 2em;
 	}
 	
 	.hideToggle {
