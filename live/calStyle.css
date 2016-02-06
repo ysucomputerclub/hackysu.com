@@ -24,15 +24,27 @@ h3 {
 	margin-bottom: 1em;
 }
 
+h4 {
+	font-family: Arvo;
+	color: #fff;
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
 p {
 	padding: 0;
 	margin: 0;
 }
 
 a, a:visited{
+	transition: all .2s;
 	text-decoration: none;
 	font-weight: bold;
 	color: #F6DC6C;
+}
+
+a:hover {
+	color: #FFF;
 }
 
 #calendar {
@@ -131,7 +143,7 @@ a, a:visited{
 
 .content > h2 {
 	color: #f05c2d;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 
 #header {
@@ -175,6 +187,10 @@ a.twitter-timeline {
 
 .stiff {
 	display: inline-block;
+}
+
+#footer {
+	margin: 4em auto 2em;
 }
 
 @media screen and (min-width: 996px) {
