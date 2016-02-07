@@ -18,7 +18,7 @@ function CountDownTimer(dt, id)
 		if (distance < 0) {
 
 			clearInterval(timer);
-			document.getElementById(id).innerHTML = '<a href="http://hackysu2015.challengepost.com/">Submit</a> your projects now!';
+			document.getElementById(id).innerHTML = "Time's up! Check out the <a href='http://hackysu2015.challengepost.com/'>submissions</a>!";
 
 			return;
 		}
