@@ -246,7 +246,7 @@ a:hover {
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
 	opacity: 0.8;
-	width: 12em;
+	width: 16em;
 	margin: 0.5em;
 }
 
@@ -258,6 +258,10 @@ a:hover {
 
 .sponsor img {
 	width: 100%;
+}
+
+.sponsorT2 {
+    width: 12em;
 }
 
 .food {
