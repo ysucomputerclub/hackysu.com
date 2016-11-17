@@ -65,7 +65,7 @@ a:hover {
 #hackday{
     height: 0px;
     width: 0px;
-    
+
 }
 
 #hackday img{
@@ -178,7 +178,13 @@ a:hover {
 #top {
 	height: 50em;
 	margin-bottom: -44em;
-	background: linear-gradient(to bottom, rgba(25,29,41, 1) 0%, rgba(25,29,41, 0) 100%);
+	/*background: linear-gradient(to bottom, rgba(25,29,41, 1) 0%, rgba(25,29,41, 0) 100%);*/
+	/*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#191D29), to(#535d69));*/
+	background: -webkit-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
+	background: -moz-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
+	background: -ms-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
+	background: -o-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
+	background: linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
 }
 
 #logo {
@@ -369,7 +375,7 @@ a:hover {
 		margin-left: 0.4em;
 		margin-right: 0.4em;
 	}
-	
+
 	.sponsor {
 		width: 6em;
 		margin: 0.25em;
