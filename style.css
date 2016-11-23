@@ -170,7 +170,8 @@ a:hover {
 }
 
 .content > h2 {
-	color: #f05c2d;
+	/*color: #f05c2d; Old 2016 Logo color*/
+	color: #b61e25;
 	margin-bottom: 1em;
 }
 
