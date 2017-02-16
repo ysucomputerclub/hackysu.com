@@ -5,10 +5,10 @@
 		<script src="timer.js"></script>
 
 		<meta name="twitter:widgets:link-color" content="#f05c2d">
-		
+
 		<link href='calStyle.css' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Arvo|Open+Sans' rel='stylesheet' type='text/css'>
-		
+
 		<meta id="Viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
 		<script type="text/javascript">
@@ -38,7 +38,7 @@
 		</div>
 		<div id="wrap">
 			<div id="header">
-				<img src="http://hackysu.com/logo2016.png">
+				<img src="../hysu17-medium.png">
 				<h3>LIVE</h3>
 			</div>
 			<div class="content">
@@ -51,13 +51,13 @@
 				<p>WIFI NETWORK</p>
 				<h4>HackYSU-WiFi</h4>
 				<p>WIFI PASSWORD</p>
-				<h4>HackYSU2016!</h4>
-				<h2><a href="http://hackysu2016.devpost.com/" target="_BLANK">DEVPOST</a></h2>
-				<p><a href="http://hackysu2016.devpost.com/" target="_BLANK">Submit your hack</a> and browse through the other fantastic creations we've made this weekend!</p>
+				<h4>HackYSU2017!</h4>
+				<h2><a href="http://hackysu2017.devpost.com/" target="_BLANK">DEVPOST</a></h2>
+				<p><a href="http://hackysu2017.devpost.com/" target="_BLANK">Submit your hack</a> and browse through the other fantastic creations we've made this weekend!</p>
 			</div>
 			<div id="twitter"><a class="twitter-timeline" height="600px" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/HackYSU" data-widget-id="588028278344122371">Tweets by @HackYSU</a></div>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			
+
 			<script>
 				//Make Twitter not stupid thin
 				 $(window).on('load', function () {
@@ -82,7 +82,7 @@
 				<p>HackYSU Staff</p>
 				<h3><a href="https://www.facebook.com/hackysu/">Message Staff directly via Facebook</a></h3>
 			</div>
-			
+
 			<script>
 				//Init calendar
 				var ww = $("#calendar").width();
@@ -92,10 +92,10 @@
 					$("#calendar").addClass("open");
 					$("#wrap").css("padding-left", ww);
 				}
-				
+
 				$(".hideToggle").css("left", ww-1);
-				
-				//Toggle Calendar 
+
+				//Toggle Calendar
 				$(".hideToggle").click(function(){
 					if ($(this).parent().hasClass("open")) {
 						$(this).parent().removeClass("open");
@@ -103,16 +103,16 @@
 						$(this).parent().addClass("open");
 					}
 				});
-				
+
 				//Resize window junk
 				$(window).resize(function(){
 					ww = $("#calendar").width();
 					$(".hideToggle").css("left", ww - 1);
-					
+
 					if ($("#calendar").hasClass("open") !== 1) {
 						$("#calendar").css("left", -ww);
 					}
-					
+
 					if ($(window).width() > 995) {
 						$("#calendar").addClass("open");
 						$("#wrap").css("padding-left", ww);
@@ -121,7 +121,7 @@
 						$("#wrap").css("padding-left", "0");
 					}
 				});
-				
+
 				//Scroll junk
 				$('a[href^="#"]').on('click',function (e) {
 					e.preventDefault();
@@ -135,7 +135,7 @@
 				});
 			</script>
 				<div id="footer">
-				<p><strong>HackYSU</strong> 2015-2016<br />
+				<p><strong>HackYSU</strong> 2015-2017<br />
 				An initiative of the <a href="http://penguinhackers.io"><strong>Youngstown Penguin Hackers</strong></a> </p>
 			</div>
 		</div>
