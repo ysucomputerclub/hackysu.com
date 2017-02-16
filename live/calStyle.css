@@ -146,6 +146,36 @@ a:hover {
 	margin-bottom: 0.5em;
 }
 
+.emptySpace {
+	padding: 5em;
+}
+
+.sponsor {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	opacity: 0.8;
+	width: 16em;
+	margin: 0.5em;
+}
+
+.sponsor:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	opacity: 1;
+}
+
+.sponsor img {
+	width: inherit;
+}
+
+.sponsorT2 {
+    width: 12em;
+}
+
+.food {
+	width: 8em;
+}
+
 #header {
 	padding: 2em 0;
 }
@@ -164,7 +194,7 @@ a:hover {
 iframe[id^='twitter-widget-0'] {
 	height:600px !important;
 	margin-bottom:10px !important;
-	width:90% !important; 
+	width:90% !important;
 }
 
 a.twitter-timeline {
@@ -203,16 +233,20 @@ a.twitter-timeline {
 	body {
 		font-size: 1.5em;
 	}
-	
+
 	#calendar {
 		font-size: 2em;
 	}
-	
+
 	.hideToggle {
 		display: inline-block;
 	}
-	
+
 	#wrap {
 		padding-top: 0.25em;
+	}
+	.sponsor {
+		width: 6em;
+		margin: 0.25em;
 	}
 }
