@@ -147,14 +147,14 @@ a:hover {
 }
 
 .emptySpace {
-	padding: 5em;
+	padding: 2em;
 }
 
 .sponsor {
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
 	opacity: 0.8;
-	width: 16em;
+	width: 6em;
 	margin: 0.5em;
 }
 
@@ -169,11 +169,11 @@ a:hover {
 }
 
 .sponsorT2 {
-    width: 12em;
+    width: 3em;
 }
 
 .food {
-	width: 8em;
+	width: 3em;
 }
 
 #header {
