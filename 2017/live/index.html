@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<title>HackYSU LIVE</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="timer.js"></script>
+
+		<meta name="twitter:widgets:link-color" content="#f05c2d">
+		<link href='calStyle.css' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arvo|Open+Sans' rel='stylesheet' type='text/css'>
+
+		<meta id="Viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+		<script type="text/javascript">
+		//Fix scaling
+		$(function(){
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+		  var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width; //get proper width
+		  var mw = 480; // min width of site
+		  var ratio =  ww / mw; //calculate ratio
+		  if( ww < mw){ //smaller than minimum size
+		   $('#Viewport').attr('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww);
+		  }else{ //regular size
+		   $('#Viewport').attr('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=' + ww);
+		  }
+		}
+		});
+		</script>
+	</head>
+	<body>
+		<div id="quicklinks" style="position: absolute; right: 0; text-align: right; font-size: 0.5em; padding: 1em;">
+			<a href="#twitter">TWITTER FEED</a>
+			<br/><a href="#emergency">EMERGENCY INFORMATION</a>
+		</div>
+		<div id="calendar">
+				<div class="hideToggle"><span>|||</span></div>
+			<iframe src="calendarPage.html" style="width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div id="wrap">
+			<div id="header">
+				<img src="../hysu17-medium.png">
+				<h3>LIVE</h3>
+			</div>
+			<div class="content">
+				<!--<p>Thank you to our sponsors for helping to make HackYSU a great event!</p>
+				<h2>TIER 1 SPONSORS</h2>-->
+				<div class="sponsors">
+					<a href="http://web.ysu.edu/stem" class="sponsor" target="_blank"><img title="YSU STEM" src="../images/stem.png"></a>
+          <a href="http://www.ybi.org" class="sponsor" target="_blank"><img title="Youngstown Business Incubator" src="../images/ybi.png"></a>
+					<a href="https://www.turningtechnologies.com/" class="sponsor" target="_blank"><img src="../images/TurningTechLogo.png" alt=""></a>
+
+				</div>
+        <!--<h3>TIER 2 SPONSORS</h3>-->
+        <div class="sponsors">
+          <a href="http://www.drund.com/" class="sponsor sponsorT2" target="_blank"><img title="Drund" src="../images/drund.png"></a>
+					<a href="http://sga.ysu.edu/" class="sponsor sponsorT2" target"_blank"><img title="YSU Student Government Association" src="../images/sgaSeal.png"></a>
+					<a href="http://csis.ysu.edu/" class="sponsor sponsorT2" target="_blank"><img title="YSU CSIS" src="../images/csis.png"></a>
+					<a href="http://www.innovarsystems.com/index.php" class="sponsor sponsorT2" target="_blank"><img title="Innovar Systems"src="../images/InnovarLogoBlack.png"></a>
+        </div>
+			</div>
+			<div class="emptySpace">
+			</div>
+
+			<div class="content">
+				<p>HACKING ENDS</p>
+				<h4 style="color: #f05c2d"><div id="countdown"></div></h4>
+				<p>LOCATION</p>
+				<h4>Stambaugh Stadium
+				<br/>Floor "P"
+			</br><span style="font-size: 0.5em">M70 is good for parking!</span></h4>
+				<p>WIFI NETWORK</p>
+				<h4>HackYSU2017</h4>
+				<p>WIFI PASSWORD</p>
+				<h4>HackYSU2017!</h4>
+				<h4>Need a mentor? Post to the <a href="https://facebook.com/hackysu">HackYSU Facebook Group!</h4>
+				<h2><a href="http://hackysu2017.devpost.com/" target="_BLANK">DEVPOST</a></h2>
+				<p><a href="http://hackysu2017.devpost.com/" target="_BLANK">Submit your hack</a> and browse through the other fantastic creations we've made this weekend!</p>
+			</div>
+			<div id="twitter"><a class="twitter-timeline" height="600px" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/HackYSU" data-widget-id="588028278344122371">Tweets by @HackYSU</a></div>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+			<script>
+			  //Make Twitter not stupid thin
+			   $(window).on('load', function () {
+			    $('iframe[id^=twitter-widget-]').each(function () {
+			      var head = $(this).contents().find('head');
+			      if (head.length) {
+			        head.append('<style>.timeline-Tweet-text{font-size: 16px !important;}</style>');
+			      }
+			      $('#twitter-widget-0').append($('<div class=timeline-Tweet-text>'));
+			    })
+			   });
+			</script>
+
+			<div id="emergency" class="content">
+				<h2>Emergency Contacts</h2>
+				<p>Medical/Large Scale Emergencies</p>
+				<h3>Dial 911</h3>
+				<p>Theft/Harassment/Crime</p>
+				<h3>YSU Police: <span class="stiff">330-941-3527</span></h3>
+				<p>MLH Anonymous Reporting</p>
+				<h3>Phone: +1 (409) 202-6060
+				<br/>Email: incidents@mlh.io</h3>
+				<p>HackYSU Staff</p>
+				<h3><a href="https://www.facebook.com/hackysu/">Message Staff directly via Facebook</a></h3>
+			</div>
+
+			<script>
+				//Init calendar
+				var ww = $("#calendar").width();
+				if ($(window).width() <= 995) {
+					$("#calendar").css("left", -ww);
+				} else {
+					$("#calendar").addClass("open");
+					$("#wrap").css("padding-left", ww);
+				}
+
+				$(".hideToggle").css("left", ww-1);
+
+				//Toggle Calendar
+				$(".hideToggle").click(function(){
+					if ($(this).parent().hasClass("open")) {
+						$(this).parent().removeClass("open");
+					} else {
+						$(this).parent().addClass("open");
+					}
+				});
+
+				//Resize window junk
+				$(window).resize(function(){
+					ww = $("#calendar").width();
+					$(".hideToggle").css("left", ww - 1);
+
+					if ($("#calendar").hasClass("open") !== 1) {
+						$("#calendar").css("left", -ww);
+					}
+
+					if ($(window).width() > 995) {
+						$("#calendar").addClass("open");
+						$("#wrap").css("padding-left", ww);
+						$("#calendar").css("left", "0");
+					} else {
+						$("#wrap").css("padding-left", "0");
+					}
+				});
+
+				//Scroll junk
+				$('a[href^="#"]').on('click',function (e) {
+					e.preventDefault();
+					var target = this.hash;
+					$target = $(target);
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top
+					}, 700, 'swing', function () {
+						window.location.hash = target;
+					});
+				});
+			</script>
+			<div class="emptySpace">
+			</div>
+			<div class="content">
+				<!--<p>Thank you to our sponsors for helping to make HackYSU a great event!</p>
+				<h3>"IN-KIND" SPONSORS</h3>-->
+				<div class="sponsors">
+					<a href="http://stonefruitcoffee.com" class="sponsor food" target="_blank"><img title="Stone Fruit Coffee Co" src="../images/stonefruit.png"></a>
+					<a href="http://mypizzaworks.com" class="sponsor food" target="_blank"><img title="Pizza Works" src="../images/pizzaWorks.png"></a>
+					<a href="http://thegentrycatering.com" class="sponsor food" target="_blank"><img title="The Gentry" src="../images/gentry.png"></a>
+					<a href="https://www.facebook.com/Casseses-MVR-238316706192736/" class="sponsor food" target="_blank"><img title="Cassese's Mahoning Valley Restaurant" src="../images/mvr.png"></a>
+					<a href="http://mcdonoughmuseum.ysu.edu/" class="sponsor food" target="_blank"><img title="McDonough Museum of Art" src="../images/mdma.png"></a>
+					<a href="https://www.oar.net/" class="sponsor food" target="_blank"><img title="OARnet" src="../images/oarnet.png"></a>
+					<a href="https://www.namecheap.com/" class="sponsor food" target="_blank"><img title="NameCheap" src="../images/namecheap.png"></a>
+					<a href="https://www.3dprinterworks.com/" class="sponsor food" target="_blank"><img title="3DPrinterworks" src="../images/3Dprinterworks.png"></a>
+					<a href="http://www.makergear.com" class="sponsor food" target="_blank"><img title="MakerGear" src="../images/mg_logo_colors_large.png"></a>
+					<a href="https://cms.ysu.edu/launch-lab/launch-lab" class="sponsor food" target="_blank"><img title="YSU Launch Lab" src="../images/YSUlaunchlab.png"></a>
+					<a href="http://www.rookeryradio.com/" class="sponsor food" target="_blank"><img title="Rookery Radio" src="../images/rookeryradio.png"></a>
+
+				</div>
+			</div>
+				<div id="footer">
+				<p><strong>HackYSU</strong> 2015-2017<br />
+				An initiative of the <a href="http://penguinhackers.io"><strong>Youngstown Penguin Hackers</strong></a> </p>
+			</div>
+		</div>
+	</body>
+</html>
