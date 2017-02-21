@@ -1,4 +1,4 @@
-CountDownTimer('02/07/2016 10:00 AM', 'countdown');
+CountDownTimer('02/19/2017 10:00 AM', 'countdown');
 
 function CountDownTimer(dt, id)
 {
@@ -14,11 +14,11 @@ function CountDownTimer(dt, id)
 		var now = new Date();
 		var distance = end - now;
 		var time = '';
-		
+
 		if (distance < 0) {
 
 			clearInterval(timer);
-			document.getElementById(id).innerHTML = "Time's up! Check out the <a href='http://hackysu2015.challengepost.com/'>submissions</a>!";
+			document.getElementById(id).innerHTML = "Time's up! Check out the <a href='http://hackysu2017.challengepost.com/'>submissions</a>!";
 
 			return;
 		}
@@ -32,7 +32,7 @@ function CountDownTimer(dt, id)
 		time += hours + 'hrs ';
 		time += minutes + 'mins ';
 		time += seconds + 'secs';
-		
+
 		document.getElementById(id).innerHTML = time;
 	}
 
