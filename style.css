@@ -89,7 +89,7 @@ Local Hack Day CSS
 	z-index: 10;
 	transition: all 0.2s;
 	position: fixed;
-	margin: -1em 0 0;
+	/*margin: -1em 0 0;  Removed after PureCSS Update to fix header position */
 	padding: 0.5em;
 }
 
