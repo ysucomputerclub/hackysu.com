@@ -168,45 +168,6 @@
 					</div>
 				</div>
 			</div>
-			<script>
-				$(".hideMe").hide();
-				$(document).on("click",".trigger", function(event){
-					event.preventDefault();
-					if ($(this).hasClass("active")) $(this).removeClass("active");
-					else $(this).addClass("active");
-					$(this).next(".hideMe").slideToggle(200);
-				});
-
-				$('a[href^="#"]').on('click',function (e) {
-					e.preventDefault();
-					var target = this.hash;
-					$target = $(target);
-					$('html, body').stop().animate({
-						'scrollTop': $target.offset().top
-					}, 700, 'swing', function () {
-						window.location.hash = target;
-					});
-				});
-
-				// with jQuery - Temporary Metadata Scrape Update Code
-				$.post(
-					'https://graph.facebook.com',
-					{
-						id: '<?php echo $url; ?>',
-						scrape: true
-					},
-					function(response){
-						console.log(response);
-					}
-				);
-
-				// with "vanilla" javascript
-				var fbxhr = new XMLHttpRequest();
-				fbxhr.open("POST", "https://graph.facebook.com", true);
-				fbxhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-				fbxhr.send("id=<?php echo $url; ?>&scrape=true");
-				// END TEMP SCRIPT
-			</script>
 			<!--
 		<div id="itinerary" class="tag"></div>
 			<div class="content right">
