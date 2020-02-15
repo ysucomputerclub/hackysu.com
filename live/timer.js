@@ -1,4 +1,4 @@
-CountDownTimer('02/24/2019 9:00 AM', 'countdown');
+CountDownTimer('02/23/2020 9:00 AM', 'countdown');
 
 function CountDownTimer(dt, id)
 {
@@ -18,7 +18,7 @@ function CountDownTimer(dt, id)
 		if (distance < 0) {
 
 			clearInterval(timer);
-			document.getElementById(id).innerHTML = "Time's up! Check out the <a href='http://hackysu2017.challengepost.com/'>submissions</a>!";
+			document.getElementById(id).innerHTML = "Time's up! Submit your project at the Hardware Lab Desk!";
 
 			return;
 		}
