@@ -1,396 +1,415 @@
 
 *, *:after, *:before  {
-outline: none;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding:0;
-	margin:0;
-}
-
-html {
-	text-align: center;
-	color: #191d29;
-	background-color: #535d69;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-p {
-	font-family: 'Open Sans';
-	font-size: 1.2em;
-}
-
-h1 {
-	font-family: 'Arvo';
-}
-
-h2 {
-	font-family: 'Arvo';
-	margin: 0;
-	padding: 0;
-	font-size: 3em;
-}
-
-h3 {
-	font-family: 'Arvo';
-	margin: 0;
-	padding: 0.25em;
-	font-size: 1.5em;
-}
-
-a {
-	display: inline-block;
-	transition: all 0.2s;
-	color: #fff;
-	text-decoration: none;
-	text-shadow: 1px 2px 7px #000;
-}
-
-a:hover {
-	color: #f6dc6c;
-}
-
-#mlh-trust-badge {
-	transition: all 0.2s;
-	position: fixed;
-	top: 0;
-	right: 50px;
-	max-width: 100px;
-	width: 10%;
-	min-width: 60px;
-	display: block;
-	z-index: 10000;
-}
-
-/*
-Local Hack Day CSS
-
-#hackday{
-    height: 0px;
-    width: 0px;
-
-}
-
-#hackday img{
-    transition: all 0.2s;
-	position: absolute;
-	top: 0;
-	right: 5px;
-    margin-top:5px;
-	max-width: 300px;
-	width: 20%;
-	min-width: 60px;
-	display: block;
-	z-index: 10000;
-} */
-
-#header {
-	z-index: 10;
-	transition: all 0.2s;
-	position: fixed;
-	/*margin: -1em 0 0;  Removed after PureCSS Update to fix header position */
-	padding: 0.5em;
-}
-
-#header a {
-	margin: 0 .5em;
-}
-
-.signup {
-	font-size: 2.5em;
-	font-weight: bold;
-}
-
-.signup-note {
-	margin-top: -0.5em;
-	padding-top: 0;
-}
-
-.mentor-signup {
-	background-color: #191d29;
-	color: #535d69;
-	padding: 0.25em 0.5em;
-	font-size: .75em;
-	font-weight: bold;
-	border: solid 1px #535d69;
-	border-radius: 0.5em;
-	text-shadow: none;
-}
-
-.mentor-signup:hover {
-	color: #191d29;
-	background: none;
-	border: solid 1px #191d29;
-}
-
-.tag {
-	height: 1px;
-}
-
-.content:first-of-type {
-	margin-top: 4em;
-}
-
-.content {
-	position: relative;
-	z-index: 2;
-	width: 90%;
-	margin: 6em auto;
-	padding: 2em;
-	background-color: #191d29;
-	color: #535d69;
-}
-
-.content:before {
-	z-index: -1;
-	content: '';
-	position: absolute;
-	left: 0;
-	top: -4em;
-	width: 100%;
-	height: 8em;
-	transform: skewY(-2deg);
-	-moz-transform: skewY(-2deg);
-	-webkit-transform: skewY(-2deg);
-	background-color: #191d29;
-}
-
-.content:after {
-	z-index: -1;
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 100%;
-	margin-top: -4em;
-	width: 100%;
-	height: 8em;
-	transform: skewY(-2deg);
-	-moz-transform: skewY(-2deg);
-	-webkit-transform: skewY(-2deg);
-	background-color: #191d29;
-}
-
-.content > h2 {
-	/*color: #f05c2d; Old 2016 Logo color*/
-	color: #b61e25;
-	margin-bottom: 1em;
-}
-
-
-#top {
-	height: 50em;
-	margin-bottom: -44em;
-	/*background: linear-gradient(to bottom, rgba(25,29,41, 1) 0%, rgba(25,29,41, 0) 100%);*/
-	/*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#191D29), to(#535d69));*/
-	/*background: -webkit-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
-	background: -moz-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
-	background: -ms-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
-	background: -o-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
-	background: linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);*/
-}
-
-#logo {
-	width: 25%;
-	max-width: 30em;
-	min-width: 15em;
-}
-
-#titleSponsor {
-	width: 25%;
-	max-width: 30em;
-	min-width: 15em;
-	margin-bottom: 0.5em;
-}
-
-.faqItem {
-	transition: all 0.2s;
-	cursor: pointer;
-	margin: 1em 3em;
-}
-
-.faqItem:first-child {
-	margin-top: 0;
-}
-
-.faqItem:hover {
-	color: #aaa;
-}
-
-.faqItem .icon {
-	display: inline-block;
-	margin-right: 0.5em;
-	opacity: 0.5;
-	-moz-opacity: 0.5;
-	transition: all 0.25s;
-	-moz-transition: all 0.25s;
-}
-
-.active .icon {
-	transform: scale(0.75) rotate(-90deg);
-	-moz-transform: scale(0.75) rotate(-90deg);
-	-webkit-transform: scale(0.75) rotate(-90deg);
-}
-
-.clear {
-	clear: both;
-}
-
-.time {
-	transition: all 0.2s;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	padding: 0.5em;
-	color: #fff;
-	background-color: #535d69;
-}
-
-.time:hover {
-	background-color: #fff;
-	color: #535d69;
-}
-
-.time h3 {
-	position: absolute;
-	margin: 0.5em;
-}
-
-.time p {
-	margin: 0.5em 2em;
-	padding: 0.5em 1.5em;
-}
-
-#map {
-	display: block;
-	width: 100%;
-	height: 40em;
-	max-width: 800px;
-	padding: 1em;
-	margin: auto;
-	background-color: #fff;
-	box-shadow: 1px 3px 7px #000;
-}
-
-.sponsor {
-	filter: grayscale(1);
-	-webkit-filter: grayscale(1);
-	opacity: 0.8;
-	width: 16em;
-	margin: 0.5em;
-}
-
-.sponsor:hover {
-	filter: grayscale(0);
-	-webkit-filter: grayscale(0);
-	opacity: 1;
-}
-
-.sponsor img {
-	width: 100%;
-}
-
-.sponsorT2 {
-    width: 12em;
-}
-
-.sponsorT3 {
-	width: 9em;
-}
-
-.food {
-	width: 8em;
-}
-
-.social .icon {
-	display: inline-block;
-	margin: 0.5em;
-	font-size: 2em;
-}
-
-.social .icon:hover {
-	margin-left: 0.75em;
-	margin-right: 0.75em;
-}
-
-@media screen and (min-width: 1024px) {
-	.left {
-		padding-left: 4em;
-		margin-left: -2em;
+	outline: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding:0;
+		margin:0;
 	}
-
-	.right {
-		padding-right: 4em;
-		margin-right: -2em;
+	
+	html {
+		text-align: center;
+		color: black;
+		background-color: rgb(229,0,0);
+		overflow-y: scroll;
+		overflow-x: hidden;
 	}
-
-	.time p {
-
+	
+	p {
+		font-family: 'Open Sans';
+		font-size: 1.2em;
 	}
-}
-
-@media screen and (max-width: 1023px) {
-	#mlh-trust-badge {
-		right: 8px;
+	ul {
+		font-family: 'Open Sans';
+		font-size: 1.2em;
 	}
-
-	.mentor-signup {
-		font-size: 1em;
+	
+	h1 {
+		font-family: 'Arvo';
 	}
-
-	.faqItem {
-		margin: 1em;
+	
+	h2 {
+		font-family: 'Arvo';
+		margin: 0;
+		padding: 0;
+		font-size: 3em;
 	}
-
-	.time h3 {
-		position: relative;
-		float: none;
-	}
-
-	#map {
-		height: 20em;
-	}
-
-	.social .icon {
+	
+	h3 {
+		font-family: 'Arvo';
+		margin: 0;
+		padding: 0.25em;
 		font-size: 1.5em;
+	}
+	
+	a {
+		display: inline-block;
+		transition: all 0.2s;
+		color: #fff;
+		text-decoration: none;
+		text-shadow: 1px 2px 7px #000;
+	}
+	
+	a:hover {
+		color: #f6dc6c;
+	}
+	
+	#mlh-trust-badge {
+		transition: all 0.2s;
+		position: fixed;
+		top: 0;
+		right: 50px;
+		max-width: 100px;
+		width: 10%;
+		min-width: 60px;
+		display: block;
+		z-index: 10000;
+	}
+	
+	/*
+	Local Hack Day CSS
+	
+	#hackday{
+		height: 0px;
+		width: 0px;
+	
+	}
+	
+	#hackday img{
+		transition: all 0.2s;
+		position: absolute;
+		top: 0;
+		right: 5px;
+		margin-top:5px;
+		max-width: 300px;
+		width: 20%;
+		min-width: 60px;
+		display: block;
+		z-index: 10000;
+	} */
+	
+	#header {
+		z-index: 10;
+		transition: all 0.2s;
+		position: fixed;
+		display:block;
+		text-align: right;
+		/*margin: -1em 0 0;  Removed after PureCSS Update to fix header position */
+		padding: 0.5em;
+	}
+	
+	#header a {
+		margin: 0 .5em;
+	}
+	
+	.signup {
+		font-size: 2.5em;
+		font-weight: bold;
+	}
+	
+	.signup-note {
+		margin-top: -0.5em;
+		padding-top: 0;
+	}
+	
+	.mentor-signup {
+		background-color: #1b1b1b;	;
+		color: #1b1b1b;
+		padding: 0.25em 0.5em;
+		font-size: .75em;
+		font-weight: bold;
+		border: solid 1px #535d69;
+		border-radius: 0.5em;
+		text-shadow: none;
+	}
+	
+	.mentor-signup:hover {
+		color: #1b1b1b;
+		background: none;
+		border: solid 1px #1b1b1b;
+	}
+	
+	.tag {
+		height: 1px;
+	}
+	
+	.content:first-of-type {
+		margin-top: 4em;
+	}
+	
+	.content {
+		position: relative;
+		z-index: 2;
+		width: 90%;
+		margin: 6em auto;
+		padding: 2em;
+		background-color: #1b1b1b;
+		color: #535d69;
+	}
+	
+	.content:before {
+		z-index: -1;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -4em;
+		width: 100%;
+		height: 8em;
+		transform: skewY(-2deg);
+		-moz-transform: skewY(-2deg);
+		-webkit-transform: skewY(-2deg);
+		background-color: #1b1b1b
+		;
+	}
+	
+	.content:after {
+		z-index: -1;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 100%;
+		margin-top: -4em;
+		width: 100%;
+		height: 8em;
+		transform: skewY(-2deg);
+		-moz-transform: skewY(-2deg);
+		-webkit-transform: skewY(-2deg);
+		background-color: #1b1b1b;
+	}
+	
+	.content > h2 {
+		/*color: #f05c2d; Old 2016 Logo color*/
+		color: white;
+		margin-bottom: 1em;
+	}
+	
+	
+	#top {
+		height: 50em;
+		margin-bottom: -44em;
+		/*background: linear-gradient(to bottom, rgba(25,29,41, 1) 0%, rgba(25,29,41, 0) 100%);*/
+		/*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#191D29), to(#535d69));*/
+		/*background: -webkit-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
+		background: -moz-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
+		background: -ms-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
+		background: -o-linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);
+		background: linear-gradient(#191D29 20%, #282D39 40%, #363D49 60%, #454D59 80%, #535d69 100%);*/
+	}
+	
+	#logo {
+		width: 25%;
+		max-width: 30em;
+		min-width: 15em;
+	}
+	
+	#titleSponsor {
+		width: 25%;
+		max-width: 30em;
+		min-width: 15em;
+		margin-bottom: 0.5em;
+	}
+	
+	.faqItem {
+		transition: all 0.2s;
+		cursor: pointer;
+		margin: 1em 3em;
+	}
+	
+	.faqItem:first-child {
+		margin-top: 0;
+	}
+	
+	.faqItem:hover {
+		color: #aaa;
+	}
+	
+	.faqItem .icon {
+		display: inline-block;
+		margin-right: 0.5em;
+		opacity: 0.5;
+		-moz-opacity: 0.5;
+		transition: all 0.25s;
+		-moz-transition: all 0.25s;
+	}
+	
+	.active .icon {
+		transform: scale(0.75) rotate(-90deg);
+		-moz-transform: scale(0.75) rotate(-90deg);
+		-webkit-transform: scale(0.75) rotate(-90deg);
+	}
+	
+	.clear {
+		clear: both;
+	}
+	
+	.time {
+		transition: all 0.2s;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		padding: 0.5em;
+		color: #fff;
+		background-color: #535d69;
+	}
+	
+	.time:hover {
+		background-color: #fff;
+		color: #535d69;
+	}
+	
+	.time h3 {
+		position: absolute;
 		margin: 0.5em;
 	}
-
-	.social .icon:hover {
-		margin-left: 0.6em;
-		margin-right: 0.6em;
+	
+	.time p {
+		margin: 0.5em 2em;
+		padding: 0.5em 1.5em;
 	}
-
-	#quickinfo {
-		font-size: .8em;
+	
+	#map {
+		display: block;
+		width: 100%;
+		height: 40em;
+		max-width: 800px;
+		padding: 1em;
+		margin: auto;
+		background-color: #fff;
+		box-shadow: 1px 3px 7px #000;
 	}
-}
-
-@media screen and (max-width: 800px) {
-	html {
-		font-size: .8em;
-	}
-
-	#header p{
-		padding-right: 70px;
-	}
-
-	.social .icon {
-		margin: 0.25em;
-	}
-
-	.social .icon:hover {
-		margin-left: 0.4em;
-		margin-right: 0.4em;
-	}
-
+	
 	.sponsor {
-		width: 6em;
-		margin: 0.25em;
+		filter: grayscale(1);
+		-webkit-filter: grayscale(1);
+		opacity: 0.8;
+		width: 16em;
+		margin: 0.5em;
 	}
-}
-
-@media screen and (max-width: 380px) {
-	h2 {
-		font-size: 1.7em;
+	
+	.sponsor:hover {
+		filter: grayscale(0);
+		-webkit-filter: grayscale(0);
+		opacity: 1;
 	}
-}
+	
+	.sponsor img {
+		width: 100%;
+	}
+	
+	.sponsorT2 {
+		width: 12em;
+	}
+	
+	.sponsorT3 {
+		width: 9em;
+	}
+	
+	.food {
+		width: 8em;
+	}
+	
+	.social .icon {
+		display: inline-block;
+		margin: 0.5em;
+		font-size: 2em;
+	}
+	
+	.social .icon:hover {
+		margin-left: 0.75em;
+		margin-right: 0.75em;
+	}
+	h2 a {
+		display: inline-block;
+		color:#e50000;
+		background-color:#1b1b1b;
+		border:none;
+		padding:0.5em;
+		margin:0.3em;
+		border-radius: 2em;
+	}
+	h2 a:hover {
+		color: #aaa;
+	}
+	@media screen and (min-width: 1024px) {
+		.left {
+			padding-left: 4em;
+			margin-left: -2em;
+		}
+	
+		.right {
+			padding-right: 4em;
+			margin-right: -2em;
+		}
+	
+		/*.time p {
+	
+		}*/
+	}
+	
+	@media screen and (max-width: 1023px) {
+		#mlh-trust-badge {
+			right: 8px;
+		}
+	
+		.mentor-signup {
+			font-size: 1em;
+		}
+	
+		.faqItem {
+			margin: 1em;
+		}
+	
+		.time h3 {
+			position: relative;
+			float: none;
+		}
+	
+		#map {
+			height: 20em;
+		}
+	
+		.social .icon {
+			font-size: 1.5em;
+			margin: 0.5em;
+		}
+	
+		.social .icon:hover {
+			margin-left: 0.6em;
+			margin-right: 0.6em;
+		}
+	
+		#quickinfo {
+			font-size: .8em;
+		}
+	}
+	
+	@media screen and (max-width: 800px) {
+		html {
+			font-size: .8em;
+		}
+	
+		#header ul{
+			padding-right: 70px;
+		}
+	
+		.social .icon {
+			margin: 0.25em;
+		}
+	
+		.social .icon:hover {
+			margin-left: 0.4em;
+			margin-right: 0.4em;
+		}
+	
+		.sponsor {
+			width: 6em;
+			margin: 0.25em;
+		}
+	}
+	
+	@media screen and (max-width: 380px) {
+		h2 {
+			font-size: 1.7em;
+		}
+	}
+	
