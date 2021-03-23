@@ -1,281 +1,465 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="description" content="The offical Youngstown State Universty Hackathon Event started and supported by students who strive to innovate and create." />
-		<meta name="keywords" content="hackathon, coding, programming, game jam, hackysu, yph, youngstown penguin hackers, hack, ysu" />
-		<title>HackYSU</title>
-		<link rel="shortcut icon" type="image/png" href="./hysu21-favicon.png"/>
-		<meta content="width=device-width,initial-scale=1.0" name="viewport">
-		<meta property="og:image" content= "https://hackysu.com/hysu21-medium.png">
-		<meta name="google-site-verification" content="BVyyQeskuUoi1VA4wZOyTRs2r00KEZ7EDw9X9-QkmDE" />
-		<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Arvo|Open+Sans' rel='stylesheet' type='text/css'>
+<html
+  lang="en"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:og="https://ogp.me/ns#"
+  xmlns:fb="https://www.facebook.com/2008/fbml"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="description"
+      content="The offical Youngstown State Universty Hackathon Event started and supported by students who strive to innovate and create."
+    />
+    <meta
+      name="keywords"
+      content="hackathon, coding, programming, game jam, hackysu, yph, youngstown penguin hackers, hack, ysu"
+    />
+    <title>HackYSU</title>
+    <link rel="shortcut icon" type="image/png" href="./hysu21-favicon.png" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <meta property="og:image" content="https://hackysu.com/hysu21-medium.png" />
+    <meta
+      name="google-site-verification"
+      content="BVyyQeskuUoi1VA4wZOyTRs2r00KEZ7EDw9X9-QkmDE"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.9.1.min.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-		<!--[if lte IE 8]>
-		  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css">
-		<![endif]-->
-		<!--[if gt IE 8]>
+    <!--[if lte IE 8]>
+      <link
+        rel="stylesheet"
+        href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css"
+      />
+    <![endif]-->
+    <!--[if gt IE 8]>
 		  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
 		[endif]-->
-		<!--[if lte IE 8]>
- 		  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
-		  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
-		  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-		<![endif]-->
-		<!--[if gt IE 8]><!-->
-		  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
-		  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
-		  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-		<!--<![endif]-->
+    <!--[if lte IE 8]>
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/purecss@1.0.0/build/base-min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/purecss@1.0.0/build/grids-min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css"
+      />
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/base-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/grids-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css"
+    />
+    <!--<![endif]-->
 
-		<!-- OLD FONTAWESOME <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- OLD FONTAWESOME <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
-		<link href='style.css' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-		<meta property="og:title" content="HackYSU"/>
-		<meta property="og:type" content="website"/>
-		<meta property="og:url" content="https://hackysu.com"/>
-		<meta property="og:image" content="https://hackysu.com/hysu21-medium.png"/>
-		<meta property="og:site_name" content="HackYSU"/>
-		<meta property="fb:app_id" content="643858479014358"/>
-		<meta property="og:description" content="Youngstown State Universty Hackathon Event started and supported by students who strive to innovate and create"/>
+    <meta property="og:title" content="HackYSU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hackysu.com" />
+    <meta property="og:image" content="https://hackysu.com/hysu21-medium.png" />
+    <meta property="og:site_name" content="HackYSU" />
+    <meta property="fb:app_id" content="643858479014358" />
+    <meta
+      property="og:description"
+      content="Youngstown State Universty Hackathon Event started and supported by students who strive to innovate and create"
+    />
 
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@hackysu">
-		<meta name="twitter:creator" content="@hackysu">
-		<meta name="twitter:title" content="HackYSU">
-		<meta name="twitter:description" content="Youngstown State Universty Hackathon Event started and supported by students who strive to innovate and create">
-		<meta name="twitter:image:src" content="https://hackysu.com/hysu21-medium.png">
-	</head>
-	<body>
-		<div id="header">
-			<ul><a href="#top">Top</a>
-			<a href="#faq">FAQ</a>
-			<a href="#itinerary">Itinerary</a>
-			<!-- <a href="#directions">Directions</a> -->
-			<!-- <a href="./ysumap.png">YSU Map</a> -->
-			<a href="#sponsorship">Sponsorship</a>
-			<a href="#social">Contact Us</a></ul>
-    		</div>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hackysu" />
+    <meta name="twitter:creator" content="@hackysu" />
+    <meta name="twitter:title" content="HackYSU" />
+    <meta
+      name="twitter:description"
+      content="Youngstown State Universty Hackathon Event started and supported by students who strive to innovate and create"
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://hackysu.com/hysu21-medium.png"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <ul>
+        <a href="#top">Top</a>
+        <a href="#faq">FAQ</a>
+        <a href="#itinerary">Itinerary</a>
+        <!-- <a href="#directions">Directions</a> -->
+        <!-- <a href="./ysumap.png">YSU Map</a> -->
+        <a href="#sponsorship">Sponsorship</a>
+        <a href="#social">Contact Us</a>
+      </ul>
+    </div>
     <!--<div id="hackday">
       <a href="https://localhackday.mlh.io/register/?id=youngstown&city_name=Youngstown%2C%20OH" target="_blank"><img src="images/lhd-logo-white-text.png"></a>
     </div>  Local Hack Day info-->
-		<div id="wrap">
-
-			<div id="top"></div>
-			<!--<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a> -->
-			<img id="logo" title="HackYSU" src="hysu21-medium.png">
-			<!--<h3>Sponsored By</h3>
+    <div id="wrap">
+      <div id="top"></div>
+      <!--<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a> -->
+      <img id="logo" title="HackYSU" src="hysu21-medium.png" />
+      <!--<h3>Sponsored By</h3>
 			<img id="titleSponsor" title="Youngstown Business Incubator" src="./images/ybiLogo.png">-->
-			<!--<a href="https://web.ysu.edu/stem" class="sponsor" target="_blank"><img title="YSU STEM" src="./images/stem.png"></a>-->
-			<!--<img id="titleSponsor" title="Youngstown State University College of STEM" src="./images/stem.png">-->
-			<!--<br /> <br /> Make some space in the abscense of a titleSponsor -->
-			<div id="quickinfo">
-				<h2 class="thin">
-					Youngstown State University
-					<br>Spring 2021
-					<br>April 2nd - April 3rd<br/>
-					<a href="https://hackysu.typeform.com/to/EHEG9pEZ" target="blank" title="Attendee"style="border:none;padding:0.5em;">Attendee sign up form</a>
-					<a href="https://hackysu.typeform.com/to/UfVQzrpI" target="blank" title="Mentor" style="border:none;padding:0.5em;">Mentor sign up form</a>
-					<!--Registration Coming Soon-->
-				</h2>
-				<!-- <a class="typeform-share button" href="https://hackysu.typeform.com/to/Ejw4cO" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:19px;line-height:47.5px;text-align:center;margin:0;height:47.5px;padding:0px 31px;border-radius:23px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-submit-close-delay="5" target="_blank">Attendee Sign Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <a class="typeform-share button" href="https://hackysu.typeform.com/to/pKyoi4" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">Mentor Sign-Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
+      <!--<a href="https://web.ysu.edu/stem" class="sponsor" target="_blank"><img title="YSU STEM" src="./images/stem.png"></a>-->
+      <!--<img id="titleSponsor" title="Youngstown State University College of STEM" src="./images/stem.png">-->
+      <!--<br /> <br /> Make some space in the abscense of a titleSponsor -->
+      <div id="quickinfo">
+        <h2 class="thin">
+          Youngstown State University
+          <br />Spring 2021 <br />April 2nd - April 3rd<br />
+          <a
+            href="https://hackysu.typeform.com/to/EHEG9pEZ"
+            target="blank"
+            title="Attendee"
+            style="border: none; padding: 0.5em"
+            >Attendee sign up form</a
+          >
+          <a
+            href="https://hackysu.typeform.com/to/UfVQzrpI"
+            target="blank"
+            title="Mentor"
+            style="border: none; padding: 0.5em"
+            >Mentor sign up form</a
+          >
+          <!--Registration Coming Soon-->
+        </h2>
+        <!-- <a class="typeform-share button" href="https://hackysu.typeform.com/to/Ejw4cO" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:19px;line-height:47.5px;text-align:center;margin:0;height:47.5px;padding:0px 31px;border-radius:23px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-submit-close-delay="5" target="_blank">Attendee Sign Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <a class="typeform-share button" href="https://hackysu.typeform.com/to/pKyoi4" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">Mentor Sign-Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
 
-				<!--<h2>Thanks for coming!
+        <!--<h2>Thanks for coming!
 					<br/>Round 3 coming Spring 2017!</h2>-->
-				<!--<h3 class="signup-note"><br>Registration coming soon!</h3>-->
+        <!--<h3 class="signup-note"><br>Registration coming soon!</h3>-->
 
-				<!-- <br /><br /><a class="typeform-share link signup" href="https://hackysu.typeform.com/to/ltAXmO" data-mode="1" target="_blank">Sign Up!</a>
+        <!-- <br /><br /><a class="typeform-share link signup" href="https://hackysu.typeform.com/to/ltAXmO" data-mode="1" target="_blank">Sign Up!</a>
 				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script> -->
 
-				<!-- <p><a class="typeform-share link mentor-signup" class="typeform-share link" href="https://hackysu.typeform.com/to/OQvZ9E" data-mode="1" target="_blank">Mentor Sign Up</a>
+        <!-- <p><a class="typeform-share link mentor-signup" class="typeform-share link" href="https://hackysu.typeform.com/to/OQvZ9E" data-mode="1" target="_blank">Mentor Sign Up</a>
 				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script></p> -->
 
-
-				<!-- MAILING LIST SIGN UP
+        <!-- MAILING LIST SIGN UP
 				<p>Join the mailing list to get HackYSU updates:
 				<div id="mc_embed_signup">
 					<form style="padding-bottom: 1em;" action="//hackysu.us9.list-manage.com/subscribe/post?u=6f2e6039d6278c6d5321c3d6a&amp;id=845b4bd288" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll">
 
 						<input style="margin: 5px auto; padding: 0.5em 1em; font-size: 1.25em; border-radius: 0.5em; background-color: #fff; border-style: solid; outline: none; width: 12em;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required> -->
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<!--
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <!--
 						<div style="position: absolute; left: -5000px;"><input type="text" name="b_6f2e6039d6278c6d5321c3d6a_845b4bd288" tabindex="-1" value=""></div>
 						<div class="clear"><input class="button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"></div>
 						</div>
 					</form>
 				</div></p>
 				-->
-			</div>
-			<div id="faq" class="tag"></div>
-			<div class="content left">
-				<h2>FREQUENTLY ASKED QUESTIONS</h2>
-				<div class="pure-g">
-					<div class="pure-u-1 pure-u-lg-1-2">
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>What is HackYSU?</h3>
-							<p class="hideMe">HackYSU is a hackathon, an event where students of all majors and experience levels come together to create something - normally a creative technology project like an app or website - awesome in a weekend.</p>
-						</div>
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>Where and when is HackYSU?</h3>
-							<p class="hideMe">The event will take place from April 2nd - 3rd and will be held virtually via <a href="https://discord.gg/h2kDGMnKwq" target="blank" title="HackYSU 2021 Discord">Discord.</a></p>
-						</div>
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>What do people do at hackathons?</h3>
-							<p class="hideMe">Students will have 24 hours to create anything they want – software, hardware, a business plan, art, a design, anything – in the pursuit of knowledge, glory, and prizes. Hacks will be exhibited science fair style in a showcase at the end of the weekend.</p>
-						</div>
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>Does it cost anything to participate?</h3>
-							<p class="hideMe">Nope! Not only is HackYSU free, but all you'll probably recieve some awesome free swag too.
-							</p>
-						</div>
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>How do I register?</h3>
-							<p class="hideMe">Use the Registration link at the top of the site.<!--Any student currently enrolled or was enrolled in the current school year from any upper education institution can register above.--> <!--YSU students will be accepted fist, then students attending surrounding colleges.-->
+      </div>
+      <div id="faq" class="tag"></div>
+      <div class="content left">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-lg-1-2">
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                What is HackYSU?
+              </h3>
+              <p class="hideMe">
+                HackYSU is a hackathon, an event where students of all majors
+                and experience levels come together to create something -
+                normally a creative technology project like an app or website -
+                awesome in a weekend.
+              </p>
+            </div>
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                Where and when is HackYSU?
+              </h3>
+              <p class="hideMe">
+                The event will take place from April 2nd - 3rd and will be held
+                virtually via
+                <a
+                  href="https://discord.gg/h2kDGMnKwq"
+                  target="blank"
+                  title="HackYSU 2021 Discord"
+                  >Discord.</a
+                >
+              </p>
+            </div>
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                What do people do at hackathons?
+              </h3>
+              <p class="hideMe">
+                Students will have 24 hours to create anything they want –
+                software, hardware, a business plan, art, a design, anything –
+                in the pursuit of knowledge, glory, and prizes. Hacks will be
+                exhibited science fair style in a showcase at the end of the
+                weekend.
+              </p>
+            </div>
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                Does it cost anything to participate?
+              </h3>
+              <p class="hideMe">
+                Nope! Not only is HackYSU free, but you'll probably recieve some
+                awesome free swag too.
+              </p>
+            </div>
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                How do I register?
+              </h3>
+              <p class="hideMe">
+                Use the Registration link at the top of the site.<!--Any student currently enrolled or was enrolled in the current school year from any upper education institution can register above.-->
+                <!--YSU students will be accepted fist, then students attending surrounding colleges.-->
 
-							<br /><br />If you are under 18 or a high school student please <a target=“_blank” href="mailto:contact@hackysu.com">email us</a> prior to the event to be considered.
-							</p>
-						</div>
-					</div>
-					<div class="pure-u-1 pure-u-lg-1-2">
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>Are there prizes?</h3>
-							<p class="hideMe">Yep! Besides first through third place prizes for the best overall hacks we'll also have category prizes thanks to our awesome sponsors. But really, it's not about winning as much as it's about learning, creating, and networking.
+                <br /><br />If you are under 18 or a high school student please
+                <a target="“_blank”" href="mailto:contact@penguinhackers.io"
+                  >email us</a
+                >
+                prior to the event to be considered.
+              </p>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-lg-1-2">
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                Are there prizes?
+              </h3>
+              <p class="hideMe">
+                Yep! Besides first through third place prizes for the best
+                overall hacks we'll also have category prizes thanks to our
+                awesome sponsors. But really, it's not about winning as much as
+                it's about learning, creating, and networking.
 
-							<br /><br />Did we mention some of our sponsors are looking for interns?
+                <br /><br />Did we mention some of our sponsors are looking for
+                interns?
+              </p>
+            </div>
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                Do I need to be able to code?
+              </h3>
+              <p class="hideMe">
+                Nope! Not only is HackYSU not a programming-only event (though
+                there will be a lot of it), it is an educational experience. No
+                matter what your experience, you are welcome here. Everyone is
+                invited to expand their skill set and make something awesome.
 
-							</p>
-						</div>
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>Do I need to be able to code?</h3>
-							<p class="hideMe">Nope! Not only is HackYSU not a programming-only event (though there will be a lot of it), it is an educational experience. No matter what your experience, you are welcome here. Everyone is invited to expand their skill set and make something awesome.
+                <br /><br />We'll have mentors around helping students with
+                their hacks, hardware like Vives to borrow and hack on, and a
+                team building session where you can meet some awesome people
+                who'll either help get you on your feet or compliment your
+                abilities.
+              </p>
+            </div>
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                What are the rules?
+              </h3>
+              <p class="hideMe">
+                Hackers must abide by
+                <a
+                  target="“_blank”"
+                  href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                  >Major League Hacking's code of conduct</a
+                >. <br /><br />Also, teams must consist of 5 or less hackers,
+                and all projects must be created at the hackathon to qualify for
+                prizes. Feel free to plan a bit at home, but it wouldn't be fair
+                if you have a head start!
+              </p>
+            </div>
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                What do I need to participate?
+              </h3>
+              <p class="hideMe">
+                You will need a computer, an internet connection, a
+                <a href="https://discord.com" target="blank" title="Discord"
+                  >Discord Account</a
+                >
+                and everything you need to be a decent human being for 24 hours.
+              </p>
+            </div>
+            <div class="faqItem">
+              <h3 class="faqTitle trigger">
+                <div class="icon">
+                  <i class="fa fa-chevron-circle-right"></i>
+                </div>
+                Have another question?
+              </h3>
+              <p class="hideMe">
+                Email us at
+                <a target="“_blank”" href="mailto:contact@hackysu.com"
+                  >contact@hackysu.com</a
+                >
+                and we'll take care of you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(".hideMe").hide();
+        $(document).on("click", ".trigger", function (event) {
+          event.preventDefault();
+          if ($(this).hasClass("active")) $(this).removeClass("active");
+          else $(this).addClass("active");
+          $(this).next(".hideMe").slideToggle(200);
+        });
+        $('a[href^="#"]').on("click", function (e) {
+          e.preventDefault();
+          var target = this.hash;
+          $target = $(target);
+          $("html, body")
+            .stop()
+            .animate(
+              {
+                scrollTop: $target.offset().top,
+              },
+              700,
+              "swing",
+              function () {
+                window.location.hash = target;
+              }
+            );
+        });
+      </script>
 
-                            <br /><br />We'll have mentors around helping students with their hacks, hardware like Vives to borrow and hack on, and a team building session where you can meet some awesome people who'll either help get you on your feet or compliment your abilities.
-
-							</p>
-						</div>
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>What are the rules?</h3>
-							<p class="hideMe">Hackers must abide by <a target=“_blank” href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Major League Hacking's code of conduct</a>.
-                            <br /><br />Also, teams must consist of 5 or less hackers, and all projects must be created at the hackathon to qualify for prizes. Feel free to plan a bit at home, but it wouldn't be fair if you have a head start!</p>
-						</div>
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>What do I need to participate?</h3>
-							<p class="hideMe">You will need a computer, an internet connection, a <a href="https://discord.com" target="blank" title="Discord">Discord Account</a> and everything you need to be a decent human being for 24 hours.</p>
-						</div>
-						<div class="faqItem">
-							<h3 class="faqTitle trigger"><div class="icon"><i class="fa fa-chevron-circle-right"></i></div>Have another question?</h3>
-							<p class="hideMe">Email us at <a target=“_blank” href="mailto:contact@hackysu.com">contact@hackysu.com</a>  and we'll take care of you.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<script>
-				$(".hideMe").hide();
-				$(document).on("click",".trigger", function(event){
-					event.preventDefault();
-					if ($(this).hasClass("active")) $(this).removeClass("active");
-					else $(this).addClass("active");
-					$(this).next(".hideMe").slideToggle(200);
-				});
-				$('a[href^="#"]').on('click',function (e) {
-					e.preventDefault();
-					var target = this.hash;
-					$target = $(target);
-					$('html, body').stop().animate({
-						'scrollTop': $target.offset().top
-					}, 700, 'swing', function () {
-						window.location.hash = target;
-					});
-				});
-			</script>
-
-		<div id="itinerary" class="tag"></div>
-			<div class="content right">
-				<h2>ITINERARY</h2>
-			<h3>FRIDAY</h3>
-			<div class="time">
-				<h3>6:00PM</h3>
-				<p>Event Begins</p>
-			</div>
-			<div class="time">
-				<h3>7:00PM</h3>
-				<p>Opening Ceremony</p>
-			</div>
-			<div class="time">
-				<h3>7:30PM</h3>
-				<p>Teambuilding</p>
-			</div>
-			<!-- <div class="time">
+      <div id="itinerary" class="tag"></div>
+      <div class="content right">
+        <h2>ITINERARY</h2>
+        <h3>FRIDAY</h3>
+        <div class="time">
+          <h3>6:00PM</h3>
+          <p>Event Begins</p>
+        </div>
+        <div class="time">
+          <h3>7:00PM</h3>
+          <p>Opening Ceremony</p>
+        </div>
+        <div class="time">
+          <h3>7:30PM</h3>
+          <p>Teambuilding</p>
+        </div>
+        <!-- <div class="time">
 				<h3>8:00PM</h3>
 				<p>Dinner</p>
 			</div> -->
-			<div class="time">
-				<h3>9:00PM</h3>
-				<p>Hacking Begins</p>
-			</div>
-			<div class="time">
-				<h3>9:30PM</h3>
-				<p>YBI Talk With Speaker Jim Cossler</p>
-			</div>
-			<div class="time">
-				<h3>10:00PM</h3>
-				<p>Internet of Things Talk With Speaker Mike Walker</p>
-			</div>
-			<div class="time">
-				<h3>11:00PM</h3>
-				<p>Games</p>
-			</div>
-			<h3>SATURDAY</h3>
-			<!-- <div class="time">
+        <div class="time">
+          <h3>9:00PM</h3>
+          <p>Hacking Begins</p>
+        </div>
+        <div class="time">
+          <h3>9:30PM</h3>
+          <p>YBI Talk With Speaker Jim Cossler</p>
+        </div>
+        <div class="time">
+          <h3>10:00PM</h3>
+          <p>Internet of Things Talk With Speaker Mike Walker</p>
+        </div>
+        <div class="time">
+          <h3>11:00PM</h3>
+          <p>Games</p>
+        </div>
+        <h3>SATURDAY</h3>
+        <!-- <div class="time">
 				<h3>12:00AM</h3>
 				<p>Midnight Snack</p>
 			</div> -->
-			<!-- <div class="time">
+        <!-- <div class="time">
 				<h3>8:00AM</h3>
 				<p>Breakfast</p>
 			</div> -->
-			<!-- <div class="time">
+        <!-- <div class="time">
 				<h3>12:00PM</h3>
 				<p>Lunch time</p>
 			</div> -->
-			<div class="time">
-				<h3>10:00AM</h3>
-				<p>Talk with Chris Palmer</p>
-			</div>
-			<div class="time">
-				<h3>1:00PM</h3>
-				<p>Talk with Joe Duncko</p>
-			</div>
-			<div class="time">
-				<h3>3:00PM</h3>
-				<p>Tech Belt Energy Innovation Center Talk</p>
-			</div>
-			<div class="time">
-				<h3>5:00PM</h3>
-				<p>Unity and Game Development Talk with Speaker Kendra Corpier</p>
-			</div>
-			<div class="time">
-				<h3>6:00PM</h3>
-				<p>Hacking Ends</p>
-			</div>
-			<div class="time">
-				<h3>6:30PM</h3>
-				<p>Judging Begins</p>
-			</div>
-			<div class="time">
-				<h3>7:30PM</h3>
-				<p>Award Ceremony</p>
-			</div>
-			<div class="time">
-				<h3>8:00PM</h3>
-				<p>Event Ends</p>
-			</div>
-			<!-- <h3>SUNDAY</h3>
+        <div class="time">
+          <h3>10:00AM</h3>
+          <p>Talk with Chris Palmer</p>
+        </div>
+        <div class="time">
+          <h3>1:00PM</h3>
+          <p>Talk with Joe Duncko</p>
+        </div>
+        <div class="time">
+          <h3>3:00PM</h3>
+          <p>Tech Belt Energy Innovation Center Talk</p>
+        </div>
+        <div class="time">
+          <h3>5:00PM</h3>
+          <p>Unity and Game Development Talk with Speaker Kendra Corpier</p>
+        </div>
+        <div class="time">
+          <h3>6:00PM</h3>
+          <p>Hacking Ends</p>
+        </div>
+        <div class="time">
+          <h3>6:30PM</h3>
+          <p>Judging Begins</p>
+        </div>
+        <div class="time">
+          <h3>7:30PM</h3>
+          <p>Award Ceremony</p>
+        </div>
+        <div class="time">
+          <h3>8:00PM</h3>
+          <p>Event Ends</p>
+        </div>
+        <!-- <h3>SUNDAY</h3>
 			<div class="time">
 				<h3>12:00AM</h3>
 				<p>Cup Stacking</p>
@@ -300,46 +484,63 @@
 				<h3>12:30PM</h3>
 				<p>Awards Ceremony</p>
 			</div> -->
-				<p>All times are approximate and may be subject to changes based on availability or unforseen events.</p>
-			</div>
-			<!-- <div id="directions" class="tag"></div>
+        <p>
+          All times are approximate and may be subject to changes based on
+          availability or unforseen events.
+        </p>
+      </div>
+      <!-- <div id="directions" class="tag"></div>
 			<div class="content left">
 				<h2>DIRECTIONS</h2>
 				<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.1497752514247!2d-80.65234238539814!3d41.10941992114518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8833e5999140bd7b%3A0xa2b9756c5db889a0!2sStambaugh+Stadium!5e0!3m2!1sen!2sus!4v1448377599260" width="100%" height="100%" frameborder="0" style="border:0; max-width: 800px;"></iframe>
 				</div>
 			</div> -->
-		
 
-			<div id="sponsorship" class="tag"></div>
-			<div class="tag"></div>
-			<div class="content left">
-				<h2>TIER 1 SPONSORSHIP (2021)</h2>
-				<div class="sponsors">
-					<!--<a href="https://oar.net" class="sponsor" target="_blank"><img title="OARNet" src="./images/oarnet.png"></a>-->
+      <div id="sponsorship" class="tag"></div>
+      <div class="tag"></div>
+      <div class="content left">
+        <h2>TIER 1 SPONSORSHIP (2021)</h2>
+        <div class="sponsors">
+          <!--<a href="https://oar.net" class="sponsor" target="_blank"><img title="OARNet" src="./images/oarnet.png"></a>-->
 
-					<!--<a href="https://www.ntconcepts.com/" class="sponsor" target="_blank"><img title="NTConcepts" src="./images/newlogo.png"></a>-->
+          <!--<a href="https://www.ntconcepts.com/" class="sponsor" target="_blank"><img title="NTConcepts" src="./images/newlogo.png"></a>-->
 
-					<a href="https://ysu.edu/academics/science-technology-engineering-mathematics" class="sponsor" target="_blank"><img title="YSU STEM" src="./images/STEMLOGONEW.png"></a>
+          <a
+            href="https://ysu.edu/academics/science-technology-engineering-mathematics"
+            class="sponsor"
+            target="_blank"
+            ><img title="YSU STEM" src="./images/STEMLOGONEW.png"
+          /></a>
+        </div>
+        <h3>TIER 2 SPONSORS (2021)</h3>
+        <div class="sponsors">
+          <!--<a href="https://www.fedex.com/" class="sponsor sponsorT2" target="_blank"><img title="FedEx" src="./images/fedex.png"></a>-->
 
+          <!--<a href="https://lbry.io/" class="sponsor sponsorT2" target="_blank"><img title="LBRY Inc." src="./images/lbry.png"></a>-->
 
-				</div>
-        			<h3>TIER 2 SPONSORS (2021)</h3>
-       				<div class="sponsors">
-					<!--<a href="https://www.fedex.com/" class="sponsor sponsorT2" target="_blank"><img title="FedEx" src="./images/fedex.png"></a>-->
+          <a
+            href="https://sga.ysu.edu/"
+            class="sponsor sponsorT2"
+            target="_blank"
+            ><img
+              title="YSU Student Government Association"
+              src="./images/sgaSeal.png"
+          /></a>
 
-					<!--<a href="https://lbry.io/" class="sponsor sponsorT2" target="_blank"><img title="LBRY Inc." src="./images/lbry.png"></a>-->
+          <a
+            href="https://primeserversinc.com"
+            class="sponsor sponsorT2"
+            target="_blank"
+            ><img
+              title="Prime Servers, Inc."
+              src="./images/primeServersInc.png"
+          /></a>
 
-					<a href="https://sga.ysu.edu/" class="sponsor sponsorT2" target="_blank"><img title="YSU Student Government Association" src="./images/sgaSeal.png"></a>
+          <!--<a href="https://csis.ysu.edu/" class="sponsor sponsorT2" target="_blank"><img title="YSU CSIS" src="./images/csis.png"></a>-->
 
-					<a href="https://primeserversinc.com" class="sponsor sponsorT2" target="_blank"><img title="Prime Servers, Inc." src="./images/primeServersInc.png"></a>
-
-
-					<!--<a href="https://csis.ysu.edu/" class="sponsor sponsorT2" target="_blank"><img title="YSU CSIS" src="./images/csis.png"></a>-->
-
-					<!--<a href="https://www.pdmi.com/" class="sponsor sponsorT2" target="_blank"><img src="./images/pdmi2.png" alt=""></a>-->
-
-				</div>
-					<!--<h3> TIER 3 SPONSORS (2020) </h3>
+          <!--<a href="https://www.pdmi.com/" class="sponsor sponsorT2" target="_blank"><img src="./images/pdmi2.png" alt=""></a>-->
+        </div>
+        <!--<h3> TIER 3 SPONSORS (2020) </h3>
 					<div class="sponsors">
 						<a href="https://www.sensourceinc.com/" class="sponsor sponsorT3" target="_blank"><img title="SenSource Inc." src="./images/sensource.png"></a>
 						<a href="https://lbry.com/" class="sponsor sponsorT3" target="_blank"><img title="LBRY" src="./images/lbry.png"></a>
@@ -350,7 +551,7 @@
 					<a href="https://www.facebook.com/AndrewBastionPhotography/" class="sponsor food" target="_blank"><img title="Andrew Bastion Photography" src="./images/bastion.png"></a>
 					<!--<a href="https://https://butlerart.com/collections-cafe/" class="sponsor food" target="_blank"><img title="Collections Cafe" src="./images/collections.png"></a>-->
 
-					<!--<a href="https://stonefruitcoffee.com" class="sponsor food" target="_blank"><img title="Stone Fruit Coffee Co" src="./images/stonefruit.png"></a>
+        <!--<a href="https://stonefruitcoffee.com" class="sponsor food" target="_blank"><img title="Stone Fruit Coffee Co" src="./images/stonefruit.png"></a>
 
 					<a href="https://thegentrycatering.com" class="sponsor food" target="_blank"><img title="The Gentry" src="./images/gentry.png"></a>
 
@@ -369,38 +570,80 @@
 
 				</div>-->
 
-				<!-- Affiliates -->
-				<p>If you are interested in joining us as a Sponsor, <a target="_blank" href="mailto:contact@hackysu.com">contact us</a> for more information!</p>
-			</div>
-			<div id="social" class="tag"></div>
-			<div class="social content right">
-				<h2>SOCIALIZE WITH US</h2>
-				<h2>
-					<a class="icon" title="Facebook" href="https://www.facebook.com/hackysu" target="_blank"><i class="fab fa-facebook"></i></a>
-					<a class="icon" title="Twitter" href="https://twitter.com/HackYSU" target="_blank"><i class="fab fa-twitter"></i></a>
-					<a class="icon" title="Discord" href="https://discord.gg/h2kDGMnKwq" target="_blank"><i class="fab fa-discord"></i></a>
-					<!-- <a class="icon" title="Slack" href="https://yph.slack.com/" target="_blank"><i class="fab fa-slack"></i></a> -->
-				</h2>
-				<div style="clear: both;" />
-				<p>Any questions that weren't answered in the <a href="#faq">FAQ's</a>?
-				<br />Send us an <a target="_blank" href="mailto:contact@hackysu.com">email</a> and we'll get back to you soon!
-			</div>
-		</div>
-		<div id="footer">
-			<p>
-				<strong>HackYSU</strong> 2015 - 2021<br />
-				An initiative of the <a href="https://penguinhackers.io"><strong>Youngstown Penguin Hackers</strong></a><br />
-				<a class="icon" title="Fork this site" href="https://github.com/penguinhackers/hackysu.com" target="_blank"><i class="fas fa-code-branch"></i></a>
-				<a class="icon" title="See site stats" href="https://simpleanalytics.com/hackysu.com?utm_source=hackysu.com" target="_blank"><i class="fas fa-chart-bar"></i></a>
-			</p>
-			<!--<p>Powered by
+        <!-- Affiliates -->
+        <p>
+          If you are interested in joining us as a Sponsor,
+          <a target="_blank" href="mailto:contact@hackysu.com">contact us</a>
+          for more information!
+        </p>
+      </div>
+      <div id="social" class="tag"></div>
+      <div class="social content right">
+        <h2>SOCIALIZE WITH US</h2>
+        <h2>
+          <a
+            class="icon"
+            title="Facebook"
+            href="https://www.facebook.com/hackysu"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            class="icon"
+            title="Twitter"
+            href="https://twitter.com/HackYSU"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="icon"
+            title="Discord"
+            href="https://discord.gg/h2kDGMnKwq"
+            target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+          <!-- <a class="icon" title="Slack" href="https://yph.slack.com/" target="_blank"><i class="fab fa-slack"></i></a> -->
+        </h2>
+        <div style="clear: both" />
+        <p>
+          Any questions that weren't answered in the <a href="#faq">FAQ's</a>?
+          <br />Send us an
+          <a target="_blank" href="mailto:contact@hackysu.com">email</a> and
+          we'll get back to you soon!
+        </p>
+      </div>
+    </div>
+    <div id="footer">
+      <p>
+        <strong>HackYSU</strong> 2015 - 2021<br />
+        An initiative of the
+        <a href="https://penguinhackers.io"
+          ><strong>Youngstown Penguin Hackers</strong></a
+        ><br />
+        <a
+          class="icon"
+          title="Fork this site"
+          href="https://github.com/penguinhackers/hackysu.com"
+          target="_blank"
+          ><i class="fas fa-code-branch"></i
+        ></a>
+        <a
+          class="icon"
+          title="See site stats"
+          href="https://simpleanalytics.com/hackysu.com?utm_source=hackysu.com"
+          target="_blank"
+          ><i class="fas fa-chart-bar"></i
+        ></a>
+      </p>
+      <!--<p>Powered by
 				<br /><a href="https://mlh.io" style="width: 5em; margin: 0.25em" target="_blank"><img title="Major League Hacking" style="width: 100%" src="./images/mlh-logo.png"></a>
 				<a href="https://hackysu2016.devpost.com/" target="_blank"><img src="https://devpost0.assetspost.com/assets/reimagine2/devpost-logo-646bdf6ac6663230947a952f8d354cad.svg"  style="width: 8em; padding-bottom: 1em;" title="Devpost Page"></a>
 			</p>-->
+    </div>
 
-		</div>
-
-		<script async defer src="https://sa.hackysu.com/latest.js"></script>
-		<noscript><img src="https://sa.hackysu.com/noscript.gif" alt=""/></noscript>
-	</body>
+    <script async defer src="https://sa.hackysu.com/latest.js"></script>
+    <noscript
+      ><img src="https://sa.hackysu.com/noscript.gif" alt=""
+    /></noscript>
+  </body>
 </html>
