@@ -34,7 +34,6 @@ h2 {
   font-family: "Arvo";
   margin: 0;
   padding: 0;
-  font-size: 3em;
 }
 
 h3 {
@@ -414,7 +413,7 @@ h2 a:hover {
   }
 
   @media screen and (max-width: 380px) {
-    h2 {
+    html h2 {
       font-size: 1em;
     }
   }
