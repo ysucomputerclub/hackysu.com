@@ -414,7 +414,7 @@ h2 a:hover {
   }
 
   @media screen and (max-width: 380px) {
-    html {
+    h2 {
       font-size: 1em;
     }
   }
