@@ -88,7 +88,8 @@ a:hover {
 		min-width: 60px;
 		display: block;
 		z-index: 10000;
-	} */
+	} 
+*/
 
 #header {
   z-index: 10;
@@ -146,7 +147,7 @@ a:hover {
   margin: 6em auto;
   padding: 2em;
   background-color: #1b1b1b;
-  color: #535d69;
+  color: #ffffff;
 }
 
 .content:before {
@@ -220,7 +221,7 @@ a:hover {
 }
 
 .faqItem:hover {
-  color: #aaa;
+  color: rgb(182, 182, 182);
 }
 
 .faqItem .icon {
@@ -248,12 +249,12 @@ a:hover {
   margin-bottom: 2em;
   padding: 0.5em;
   color: #fff;
-  background-color: #535d69;
+  background-color: rgb(182, 182, 182);
 }
 
 .time:hover {
   background-color: #fff;
-  color: #535d69;
+  color: rgb(182, 182, 182);
 }
 
 .time h3 {
@@ -310,7 +311,6 @@ a:hover {
 .social .icon {
   display: inline-block;
   margin: 0.5em;
-  font-size: 2em;
 }
 
 .social .icon:hover {
@@ -329,6 +329,7 @@ h2 a {
 h2 a:hover {
   color: #aaa;
 }
+
 @media screen and (min-width: 1024px) {
   .left {
     padding-left: 4em;
@@ -343,74 +344,78 @@ h2 a:hover {
   /*.time p {
 	
 		}*/
-}
 
-@media screen and (max-width: 1023px) {
-  #mlh-trust-badge {
-    right: 8px;
+  div .li {
+    padding-top: 27px;
   }
 
-  .mentor-signup {
-    font-size: 1em;
+  @media screen and (max-width: 1023px) {
+    #mlh-trust-badge {
+      right: 8px;
+    }
+
+    .mentor-signup {
+      font-size: 1em;
+    }
+
+    .faqItem {
+      margin: 1em;
+    }
+
+    .time h3 {
+      position: relative;
+      float: none;
+    }
+
+    #map {
+      height: 20em;
+    }
+
+    .social .icon {
+      font-size: 12px;
+      margin: 0.5em;
+    }
+
+    .social .icon:hover {
+      margin-left: 0.6em;
+      margin-right: 0.6em;
+    }
+
+    #quickinfo {
+      font-size: 0.8em;
+    }
   }
 
-  .faqItem {
-    margin: 1em;
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 0.8em;
+    }
+
+    #header ul {
+      margin: auto;
+    }
+    .li {
+      padding-top: 20px;
+    }
+
+    .social .icon {
+      margin: 0.25em;
+    }
+
+    .social .icon:hover {
+      margin-left: 0.4em;
+      margin-right: 0.4em;
+    }
+
+    .sponsor {
+      width: 6em;
+      margin: 0.25em;
+    }
   }
 
-  .time h3 {
-    position: relative;
-    float: none;
-  }
-
-  #map {
-    height: 20em;
-  }
-
-  .social .icon {
-    font-size: 1.5em;
-    margin: 0.5em;
-  }
-
-  .social .icon:hover {
-    margin-left: 0.6em;
-    margin-right: 0.6em;
-  }
-
-  #quickinfo {
-    font-size: 0.8em;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 0.8em;
-  }
-
-  #header ul {
-	margin: auto;
-  }
-  .li{
-	  padding-top: 20px;
-  }
-
-  .social .icon {
-    margin: 0.25em;
-  }
-
-  .social .icon:hover {
-    margin-left: 0.4em;
-    margin-right: 0.4em;
-  }
-
-  .sponsor {
-    width: 6em;
-    margin: 0.25em;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  h2 {
-    font-size: 1.7em;
+  @media screen and (max-width: 380px) {
+    h2 {
+      font-size: 1.7em;
+    }
   }
 }
