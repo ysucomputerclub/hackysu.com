@@ -58,18 +58,20 @@
       />
     <![endif]-->
     <!--[if gt IE 8]><!-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.0/build/base-min.css"
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" 
+      integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" 
+      crossorigin="anonymous">
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"
+    >
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css" 
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.0/build/grids-min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css"
-    />
+
     <!--<![endif]-->
 
     <!-- OLD FONTAWESOME <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
@@ -79,7 +81,7 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
-
+    
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <meta property="og:title" content="HackYSU" />
@@ -368,6 +370,74 @@
           </div>
         </div>
       </div>
+
+      <div id="itinerary" class="tag"></div>
+        <div class="content left">
+          
+          <h3>ITINERARY</h3>
+          <hr style="margin-bottom: 1em;" />
+          <div class="pure-g">
+            <div class="pure-u-lg-2-5 pure-u-1">
+              <div class="faqItem trigger">
+                <h3 class="faqTitle">
+                  <div class="icon">
+                    <i class="fa fa-chevron-circle-right"></i>
+                  </div>
+                  FRIDAY
+                </h3>
+              </div>
+              <table id="itinerary-grid" class="pure-table pure-table-bordered hideMe">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                    <th>Presenter</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>6:00pm</td>
+                    <td>Doors Open</td>
+                    <td>DeBartolo Stadium Club</td>
+                    <td>YCC</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="pure-u-lg-1-5"></div>
+            <div class="pure-u-lg-2-5 pure-u-1">
+              <div class="faqItem trigger">
+                <h3 class="faqTitle">
+                  <div class="icon">
+                    <i class="fa fa-chevron-circle-right"></i>
+                  </div>
+                  SATURDAY
+                </h3>
+              </div>
+              <table id="itinerary-grid" class="pure-table pure-table-bordered hideMe">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                    <th>Presenter</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>6:00pm</td>
+                    <td>Doors Open</td>
+                    <td>DeBartolo Stadium Club</td>
+                    <td>YCC</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hideMe funcion moved to hide Itinerary on start -->
       <script>
         $(".hideMe").hide();
         $(document).on("click", ".trigger", function (event) {
@@ -394,7 +464,6 @@
             );
         });
       </script>
-
       <!-- <div id="itinerary" class="tag"></div>
       <div class="content right">
         <h2>ITINERARY</h2>
