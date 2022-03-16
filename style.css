@@ -242,6 +242,10 @@ a:hover {
   clear: both;
 }
 
+#itinerary-grid {
+  min-width: 100%;
+}
+
 .time {
   transition: all 0.2s;
   margin-top: 2em;
