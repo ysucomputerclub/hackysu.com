@@ -333,6 +333,10 @@ h2 a:hover {
   color: #aaa;
 }
 
+th {
+  text-align: center;
+}
+
 @media screen and (min-width: 1024px) {
   .left {
     padding-left: 4em;
