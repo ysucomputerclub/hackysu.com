@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+body {
+  font-family: "Arvo", sans-serif;
+  font-size: 1.25em;
+  background-color: #1c1c1c;
+  background-image: url("images/background-dark.png");
+}
+
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+// Text Color
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: $text-color;
+}
+
+// Font Sizes
+p {
+  font-size: 16px;
+}
+h2 {
+  font-size: 22px;
+}
+@include breakpoint("small") {
+  p {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+}
+@include breakpoint("medium") {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+// Links
+a {
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap; /* Chrome & Safari */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: pre-wrap; /* CSS3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+  @include breakpoint("x-small") {
+    word-break: normal;
+  }
+
+  color: $link-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $link-color-focus;
+    text-decoration: underline;
+  }
+}

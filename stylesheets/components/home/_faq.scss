@@ -1,0 +1,41 @@
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  ul {
+    list-style: none;
+  }
+  i {
+    color: white;
+  }
+  .faq-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background: none;
+    padding: 1rem 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: left;
+  }
+  .active,
+  li:hover {
+    p,
+    i {
+      color: #ccc;
+    }
+    border-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

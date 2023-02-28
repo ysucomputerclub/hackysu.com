@@ -1,0 +1,24 @@
+/// @type Color
+$text-color: white !default;
+$link-color: white !default;
+$link-color-focus: rgb(197, 197, 197) !default;
+$brand-color: rgb(229, 0, 80) !default;
+
+/// breakpoints map
+$breakpoints: (
+  "x-small": (
+    min-width: 320px,
+  ),
+  "small": (
+    min-width: 480px,
+  ),
+  "medium": (
+    min-width: 760px,
+  ),
+  "large": (
+    min-width: 1000px,
+  ),
+  "x-large": (
+    min-width: 1200px,
+  ),
+) !default;
