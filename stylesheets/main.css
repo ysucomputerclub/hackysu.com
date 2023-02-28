@@ -193,6 +193,9 @@ header nav ul li {
 .parking p {
   margin: 2rem 0;
 }
+.parking a {
+  text-decoration: underline;
+}
 .parking .image {
   display: flex;
   justify-content: center;
