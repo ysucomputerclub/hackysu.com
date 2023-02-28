@@ -1,0 +1,15 @@
+// More info regarding Sass 7-1 pattern, see: https://sass-guidelin.es/
+
+@charset "UTF-8";
+
+@import "base/base";
+
+@import "abstracts/mixins", "abstracts/variables";
+
+// Global
+@import "components/layout", "components/footer", "components/header";
+
+// Home
+@import "components/home/hero", "components/home/info-section",
+  "components/home/faq", "components/home/parking", "components/home/sponsors",
+  "components/home/contacts", "components/home/register";

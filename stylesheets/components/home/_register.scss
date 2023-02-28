@@ -1,0 +1,26 @@
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  a {
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 4px solid transparent;
+    background: linear-gradient(#131313, #131313) padding-box,
+      linear-gradient(to right bottom, rgb(191, 42, 42), rgb(42, 57, 191))
+        border-box;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(
+          to right bottom,
+          rgb(191, 42, 42),
+          rgb(42, 57, 191)
+        )
+        padding-box,
+      linear-gradient(to right bottom, rgb(191, 42, 42), rgb(42, 57, 191))
+        border-box;
+  }
+}

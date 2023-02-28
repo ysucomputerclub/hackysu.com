@@ -1,0 +1,17 @@
+.hero {
+  display: block;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-align: center;
+  background-image: linear-gradient(
+      360deg,
+      rgba(28, 28, 28, 0.76) 0%,
+      #141414 100%
+    ),
+    url("/images/circuit-bg.png");
+  width: 100%;
+  color: white;
+  p {
+    margin: 1rem 0;
+  }
+}
