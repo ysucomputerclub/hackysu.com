@@ -1,0 +1,268 @@
+/**
+ * Set up a decent box model on the root element
+ */
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Arvo", sans-serif;
+  font-size: 1.25em;
+  background-color: #1c1c1c;
+  background-image: url("images/background-dark.png");
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+@media (min-width: 480px) {
+  p {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 760px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+a {
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap; /* Chrome & Safari */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: pre-wrap; /* CSS3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+  color: white;
+  text-decoration: none;
+}
+@media (min-width: 320px) {
+  a {
+    word-break: normal;
+  }
+}
+a:hover, a:active, a:focus, a:focus-within {
+  color: rgb(197, 197, 197);
+  text-decoration: underline;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-container main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1280px;
+}
+
+.section-space {
+  padding: 2rem 0;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+footer p {
+  font-size: 16px;
+}
+
+header {
+  background-color: #141414;
+  padding: 0.5rem 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+header nav ul li {
+  font-size: 16px;
+  margin: 0.2rem 1rem;
+}
+
+.hero {
+  display: block;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-align: center;
+  background-image: linear-gradient(360deg, rgba(28, 28, 28, 0.76) 0%, #141414 100%), url("/images/circuit-bg.png");
+  width: 100%;
+  color: white;
+}
+.hero p {
+  margin: 1rem 0;
+}
+
+.info-section {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 50px 1px rgba(255, 255, 255, 0.25);
+  border: 4px solid transparent;
+  background: linear-gradient(#131313, #131313) padding-box, linear-gradient(to right bottom, white, rgba(255, 255, 255, 0)) border-box;
+}
+.info-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.info-section hr {
+  border-top: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq ul {
+  list-style: none;
+}
+.faq i {
+  color: white;
+}
+.faq .faq-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  background: none;
+  padding: 1rem 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  text-align: left;
+}
+.faq .active,
+.faq li:hover {
+  border-color: #ccc;
+}
+.faq .active p,
+.faq .active i,
+.faq li:hover p,
+.faq li:hover i {
+  color: #ccc;
+}
+.faq .panel {
+  padding: 0 18px;
+  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.faq .panel a {
+  text-decoration: underline;
+}
+
+.parking p {
+  margin: 2rem 0;
+}
+.parking a {
+  text-decoration: underline;
+}
+.parking .image {
+  display: flex;
+  justify-content: center;
+}
+.parking img {
+  width: 100%;
+  max-width: 800px;
+  border: 0.5rem solid white;
+}
+
+.sponsors p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+.sponsors img {
+  width: 150px;
+  margin: 0 1rem;
+}
+.sponsors .icons {
+  justify-content: center;
+  display: flex;
+}
+.sponsors img:hover {
+  border-radius: 50%;
+  border: 4px solid red;
+}
+.sponsors .join {
+  font-size: inherit;
+  text-transform: inherit;
+}
+
+.contacts div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contacts div a {
+  margin: 0 1rem;
+  transition: margin 0.2s ease-in-out;
+}
+.contacts div a i {
+  color: white;
+}
+.contacts div a:hover {
+  margin: 0 2rem;
+  transition: margin 0.2s ease-in-out;
+}
+.contacts div a:hover i {
+  color: #ccc;
+}
+
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.register a {
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 4px solid transparent;
+  background: linear-gradient(#131313, #131313) padding-box, linear-gradient(to right bottom, rgb(191, 42, 42), rgb(42, 57, 191)) border-box;
+}
+.register a:hover {
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to right bottom, rgb(191, 42, 42), rgb(42, 57, 191)) padding-box, linear-gradient(to right bottom, rgb(191, 42, 42), rgb(42, 57, 191)) border-box;
+}/*# sourceMappingURL=main.css.map */

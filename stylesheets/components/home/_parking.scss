@@ -1,0 +1,17 @@
+.parking {
+  p {
+    margin: 2rem 0;
+  }
+  a {
+    text-decoration: underline;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    max-width: 800px;
+    border: 0.5rem solid white;
+  }
+}

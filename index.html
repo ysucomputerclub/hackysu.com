@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  xmlns="https://www.w3.org/1999/xhtml"
-  xmlns:og="https://ogp.me/ns#"
-  xmlns:fb="https://www.facebook.com/2008/fbml"
->
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLES -->
+
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <script
+      src="https://kit.fontawesome.com/be15dc1a73.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SEO -->
+
+    <!-- Primary Meta Tags -->
     <meta
       name="description"
       content="The offical Youngstown State Universty Hackathon."
@@ -15,905 +24,338 @@
       name="keywords"
       content="hackathon, coding, programming, game jam, hackysu, yph, youngstown penguin hackers, hack, ysu, ysu computer club, youngstown computer club"
     />
-    <title>HackYSU</title>
-    <link rel="shortcut icon" type="image/png" href="./images/YSUCC-Logo-1MB.png" />
-    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
-    <meta property="og:image" content="https://hackysu.com/images/YSUCC-Logo-1MB.png" />
-    <meta
-      name="google-site-verification"
-      content="BVyyQeskuUoi1VA4wZOyTRs2r00KEZ7EDw9X9-QkmDE"
-    />
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.9.1.min.js"
-    ></script>
-    <script type="text/javascript" src="script.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans"
-      rel="stylesheet"
-      type="text/css"
-    />
 
-    <!--[if lte IE 8]>
-      <link
-        rel="stylesheet"
-        href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css"
-      />
-    <![endif]-->
-    <!--[if gt IE 8]>
-		  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
-		[endif]-->
-    <!--[if lte IE 8]>
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/purecss@1.0.0/build/base-min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/purecss@1.0.0/build/grids-min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css"
-      />
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link 
-      rel="stylesheet" 
-      href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" 
-      integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" 
-      crossorigin="anonymous">
-    <link 
-      rel="stylesheet" 
-      href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"
-    >
-    <link 
-      rel="stylesheet" 
-      href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css" 
-    />
-
-    <!--<![endif]-->
-
-    <!-- OLD FONTAWESOME <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <meta property="og:title" content="HackYSU" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hackysu.com" />
-    <meta property="og:image" content="https://hackysu.com/images/YSUCC-Logo-1MB.png" />
-    <meta property="og:site_name" content="HackYSU" />
-    <meta property="fb:app_id" content="643858479014358" />
+    <meta property="og:url" content="https://hackysu.com/" />
+    <meta property="og:title" content="HackYSU" />
     <meta
       property="og:description"
-      content="Youngstown State Universty Computer Club"
+      content="The offical Youngstown State Universty Hackathon."
     />
+    <meta property="og:image" content="https://hackysu.com/images/logo.svg" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@ysucomputer" />
-    <meta name="twitter:creator" content="@ysucomputer" />
-    <meta name="twitter:title" content="YSU Computer Club" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hackysu.com/" />
+    <meta property="twitter:title" content="HackYSU" />
     <meta
-      name="twitter:description"
-      content="Youngstown State Universty Computer Club"
+      property="twitter:description"
+      content="The offical Youngstown State Universty Hackathon."
     />
     <meta
-      name="twitter:image:src"
-      content="https://hackysu.com/images/YSUCC-Logo-1MB.png"
+      property="twitter:image"
+      content="https://hackysu.com/images/logo.svg"
     />
+    <link rel="icon" href="/images/logo.svg" />
+    <title>HackYSU</title>
   </head>
   <body>
     <header>
-    <div id="header">
-      <ul>
-        <a href="#top"><img alt="Hack YSU 2022 logo in glitchy green font" id="logo" title="YSU Computer Club Logo" src="images/YSUCC-Logo-1MB.png" /></a>
-      </ul>
-      <ul></ul>
-        <a class= 'li' href="#faq">FAQ</a>
-        <!-- <a href="#itinerary">Itinerary</a> -->
-        <!-- <a href="#directions">Directions</a> -->
-        <!-- <a href="./ysumap.png">YSU Map</a> -->
-        <a class= 'li' href="#sponsorship">Sponsors</a>
-        <a class= 'li' href="#social">Contact</a>
-        <a class= 'li' href="https://ysucomputerclub.com">YSU Computer Club</a>
-      </ul>
-    </div></header>
-    <!--<div id="hackday">
-      <a href="https://localhackday.mlh.io/register/?id=youngstown&city_name=Youngstown%2C%20OH" target="_blank"><img src="images/lhd-logo-white-text.png"></a>
-    </div>  Local Hack Day info-->
-    <div id="wrap">
-      <div id="top"></div>
-      <!--<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a> -->
-      
-      <!--<h3>Sponsored By</h3>
-			<img id="titleSponsor" title="Youngstown Business Incubator" src="./images/ybiLogo.png">-->
-      <!--<a href="https://web.ysu.edu/stem" class="sponsor" target="_blank"><img title="YSU STEM" src="./images/stem.png"></a>-->
-      <!--<img id="titleSponsor" title="Youngstown State University College of STEM" src="./images/stem.png">-->
-      <!--<br /> <br /> Make some space in the abscense of a titleSponsor -->
-      <div id="quickinfo">
-       <img src="./images/Hack_YSU_2022_Transparent.png" alt="logo" style="max-height: 300px;">
-         <br> <h1><time datetime="2022-04-08">HackYSU April 8-10th</time></h1><br>
-        <h2>
-          
-            <a href="https://hackysu.com/images/HackYSU_2022_Poster1024_1.jpg" 
-            target="_blank"
-            title="Flyer"
-            style="border: none; padding: 0.5em;"
+      <nav>
+        <ul>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="https://ysucomputerclub.com/" target="_blank"
+              >YSU Computer Club</a
             >
-              HackYSU Flyer
-            </a>
-      </h2> 
-      <h2>
-        For more information, feel free to send us an email!
-        <a class="fas fa-envelope fa-lg" href="mailto:contact@ysucomputerclub.com"></a>
-      </h2>
-    <div>
-          <!--
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfV7RpAFAdDpjPCSzLxWCKS_Wrm16JgE5iAYoKN1mz3VjyNTQ/viewform?usp=sf_link"
-            target="blank"
-            title="Mentor"
-            style="border: none; padding: 0.5em"
-            >Mentor Registration Form</a
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero">
+      <h1>Welcome to HackYSU 2023</h1>
+      <p>April 14 - 16th</p>
+      <img src="/images/logo.svg" alt="HackYSU 2023 Logo" />
+    </div>
+    <div class="section-space"></div>
+    <div class="page-container">
+      <main>
+        <div class="register">
+          <a href="https://forms.gle/A8p2H8AF66tJHZb96" target="_blank"
+            >Register Now!</a
           >
-      </h2>
-          <!--Registration Coming Soon-->
-
-        <!-- <a class="typeform-share button" href="https://hackysu.typeform.com/to/Ejw4cO" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:19px;line-height:47.5px;text-align:center;margin:0;height:47.5px;padding:0px 31px;border-radius:23px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-submit-close-delay="5" target="_blank">Attendee Sign Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <a class="typeform-share button" href="https://hackysu.typeform.com/to/pKyoi4" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">Mentor Sign-Up </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
-
-        <!--<h2>Thanks for coming!
-					<br/>Round 3 coming Spring 2017!</h2>-->
-        <!--<h3 class="signup-note"><br>Registration coming soon!</h3>-->
-
-        <!-- <br /><br /><a class="typeform-share link signup" href="https://hackysu.typeform.com/to/ltAXmO" data-mode="1" target="_blank">Sign Up!</a>
-				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script> -->
-
-        <!-- <p><a class="typeform-share link mentor-signup" class="typeform-share link" href="https://hackysu.typeform.com/to/OQvZ9E" data-mode="1" target="_blank">Mentor Sign Up</a>
-				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script></p> -->
-
-        <!-- MAILING LIST SIGN UP
-				<p>Join the mailing list to get HackYSU updates:
-				<div id="mc_embed_signup">
-					<form style="padding-bottom: 1em;" action="//hackysu.us9.list-manage.com/subscribe/post?u=6f2e6039d6278c6d5321c3d6a&amp;id=845b4bd288" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div id="mc_embed_signup_scroll">
-
-						<input style="margin: 5px auto; padding: 0.5em 1em; font-size: 1.25em; border-radius: 0.5em; background-color: #fff; border-style: solid; outline: none; width: 12em;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required> -->
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <!--
-						<div style="position: absolute; left: -5000px;"><input type="text" name="b_6f2e6039d6278c6d5321c3d6a_845b4bd288" tabindex="-1" value=""></div>
-						<div class="clear"><input class="button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"></div>
-						</div>
-					</form>
-				</div></p>
-				-->
-      </div>
-      
-      
-      <div id="faq" class="tag"></div>
-      <div class="content left">
-        <h2>FREQUENTLY ASKED QUESTIONS</h2>
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-lg-1-2">
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                What is HackYSU?
-              </h3>
-              <p class="hideMe">
-                HackYSU is a hack-a-thon/make-a-thon, an event where students of all majors
-                and experience levels come together to create something -
-                normally a creative technology project like an app or website -
-                over the course of a weekend.
+          <a href="https://forms.gle/1NLXHXYvQZeARzux8" target="_blank">
+            Mentors Register Here!
+          </a>
+        </div>
+        <div class="section-space"></div>
+        <section id="faq" class="info-section">
+          <h2>Frequently Asked Questions</h2>
+          <hr />
+          <ul class="faq">
+            <li class="faq-item">
+              <p>What is HackYSU?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
+                HackYSU is a hack-a-thon / make-a-thon, an event where students
+                of all majors and experience levels come together to create
+                something - normally a creative technology project like an app
+                or website - over the course of a weekend.
               </p>
             </div>
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                Where and when is HackYSU?
-              </h3>
-              <p class="hideMe">
-               HackYSU 2022 will be held at Youngstown State University in the DeBartolo Stadium Club on <time datetime="2022-04-08">April 8-10th</time>.
+            <li class="faq-item">
+              <p>Where and when is HackYSU?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
+                HackYSU 2023 will be held at Youngstown State University in the
+                DeBartolo Stadium Club on April 14-16th.
               </p>
             </div>
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                What do people do at hackathons?
-              </h3>
-              <p class="hideMe">
+            <li class="faq-item">
+              <p>What do people do at hackathons?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
                 Students will have 36 hours to create anything they want –
                 software, hardware, a business plan, art, a design, anything –
-                in the pursuit of experience, fun, knowledge, and prizes. Projects will be
-                exhibited in a showcase Sunday around noon. 
+                in the pursuit of experience, fun, knowledge, and prizes.
+                Projects will be exhibited in a showcase Sunday around noon.
               </p>
             </div>
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                Does it cost anything to participate?
-              </h3>
-              <p class="hideMe">
-                Nope! Not only is HackYSU free, but you'll recieve some complimentary food and swag too.
+            <li class="faq-item">
+              <p>Does it cost anything to participate?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
+                Nope! Not only is HackYSU free, but you'll recieve some
+                complimentary food and swag too.
               </p>
             </div>
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                How do I register?
-              </h3>
-              <p class="hideMe">
-                Use the Registration link at the top of the site!<!--Any student currently enrolled or was enrolled in the current school year from any upper education institution can register above.-->
-                <!--YSU students will be accepted fist, then students attending surrounding colleges.-->
-
-                <br /><br />If you are under 18 or a high school student please
-                email us at
-                <a target="_top" href="mailto:contact@ysucomputerclub.com"
-                  >contact@ysucomputerclub.com</a
-                >
+            <li class="faq-item">
+              <p>How do I register?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>Use the Registration link at the top of the site!</p>
+              <p>
+                If you are under 18 or a high school student please email us at
+                <a href="mailto:contact@ysucomputerclub.com"
+                  >contact@ysucomputerclub.com
+                </a>
                 prior to the event to be considered.
               </p>
             </div>
-          </div>
-          <div class="pure-u-1 pure-u-lg-1-2">
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                Are there prizes?
-              </h3>
-              <p class="hideMe">
-                Yep! There will be cash prizes for the best projects, and potentially 
-                other prizes for certain categories thanks to our amazing sponsors. 
-                But really, it's not about winning as much as
+            <li class="faq-item">
+              <p>Are there prizes?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
+                Yep! There will be cash prizes for the best projects, and
+                potentially other prizes for certain categories thanks to our
+                amazing sponsors. But really, it's not about winning as much as
                 it's about learning, creating, and networking.
-
-                <br /><br />Did we mention some of our sponsors are looking for
-                interns?
               </p>
             </div>
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                Do I need to be able to code?
-              </h3>
-              <p class="hideMe">
+            <li class="faq-item">
+              <p>Do I need to be able to code?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
                 Nope! Not only is HackYSU not a programming-only event (though
                 there will be a lot of it), it is an educational experience. No
-                matter what your experience is, you are welcome here. Everyone is
-                invited to expand their skill set and make something!
-
-                <br /><br />We'll have mentors around helping students with
-                their hacks, hardware like Raspberry Pis to borrow and hack on, and a
-                team building session where you can meet some other attendees
-                who you can work with for the weekend!
+                matter what your experience is, you are welcome here. Everyone
+                is invited to expand their skill set and make something! We'll
+                have mentors around helping students with their hacks and
+                hardware - including our Raspberry Pis you can borrow and hack
+                on. There will also be a team building session where you can
+                meet some other attendees who you can work with for the weekend!
               </p>
             </div>
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                What are the rules?
-              </h3>
-              <p class="hideMe">
+            <li class="faq-item">
+              <p>What are the rules?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
                 Hackers must abide by
                 <a
-                  target="“_blank”"
                   href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-                  >Major League Hacking's code of conduct</a
-                > and <a
-                target="“_blank”"
-                href="https://ysu.edu/student-conduct/code-conduct"
-                >YSU's Code of Conduct</a>.
-                <br /><br />Also, teams must consist of 5 or less hackers,
-                and all projects must be created at the hackathon to qualify for
-                prizes. Feel free to plan a bit at home, but it wouldn't be fair
-                if you have a head start!
-              </p>
-            </div>
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                What do I need to participate?
-              </h3>
-              <p class="hideMe">
-                Ideally, you'll have a computer and some hygiene basics, but if you don't have access to a personal computer, let us know! We will have Raspberry Pis available for you to borrow for the duration of the event, and we can look into getting monitors, keyboards, etc.
-              </p>
-            </div>
-            <div class="faqItem">
-              <h3 class="faqTitle trigger">
-                <div class="icon">
-                  <i class="fa fa-chevron-circle-right"></i>
-                </div>
-                Have another question?
-              </h3>
-              <p class="hideMe">
-                Email us at
-                <a target="_top" href="mailto:contact@ysucomputerclub.com"
-                  >contact@ysucomputerclub.com</a
+                  target="_blank"
+                  >Major League Hacking's Code of Conduct</a
                 >
+                and
+                <a
+                  href="https://ysu.edu/student-conduct/student-code-conduct"
+                  target="_blank"
+                  >YSU's Code of Conduct</a
+                >.
+              </p>
+              <p>
+                Also, teams must consist of 5 or less hackers, and all projects
+                must be created at the hackathon to qualify for prizes. Feel
+                free to plan a bit at home, but it wouldn't be fair if you have
+                a head start!
+              </p>
+            </div>
+            <li class="faq-item">
+              <p>What do I need to participate?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
+                Ideally, you'll have a computer and some hygiene basics, but if
+                you don't have access to a personal computer, let us know! We
+                will have Raspberry Pis available for you to borrow for the
+                duration of the event, and we can look into getting monitors,
+                keyboards, etc.
+              </p>
+            </div>
+            <li class="faq-item">
+              <p>Have another question?</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <div class="panel">
+              <p>
+                Email us at
+                <a href="mailto:contact@ysucomputerclub.com"
+                  >contact@ysucomputerclub.com
+                </a>
                 and we'll take care of you.
               </p>
             </div>
+          </ul>
+        </section>
+        <div class="section-space"></div>
+        <section id="parking" class="info-section parking">
+          <h2>HackYSU Parking Information</h2>
+          <hr />
+          <p>
+            Any company and non-YSU students attending the event should notify
+            parking attendants in the M70 lot who you represent and that you are
+            attending HackYSU. The Computer Club will be covering those costs.
+            Current YSU students with a parking pass can park overnight in the
+            deck or in M70.
+          </p>
+          <p>
+            The DeBartolo Club room is atop Stambaugh Stadium. To join us up
+            there, cross the street from the M70 lot and walk alongside the
+            stadium until you reach Gate C, facing the street across from
+            McDonald’s. The elevator will be directly inside the door. Use the
+            “P” button to take you to the Stadium Club.
+          </p>
+          <p>
+            If you have any issues finding your way, do not hesitate to call Sam
+            Hofmann at 330-333-8162 or Trong Ong at 330-333-8670. You may also
+            email us at
+            <a href="mailto:contact@ysucomputerclub.com"
+              >contact@ysucomputerclub.com </a
+            >, message the Discord, or look for signs and a crowd.
+          </p>
+          <p>
+            Doors will be locked at night, except Gate C. If you can’t get in,
+            call Garrett Huggins at 330-779-1334.
+          </p>
+          <div class="image">
+            <img src="/images/ysu-map.jpg" alt="YSU Campus Map" />
           </div>
-        </div>
-      </div>
-
-      <!-- Parking Information -->
-      <div id="itinerary" class="tag"></div>
-        <div class="content left">
-          <h3>HackYSU Parking Information</h3>
-          <hr style="margin: 1em;" />
+        </section>
+        <div class="section-space"></div>
+        <section id="itinerary" class="info-section">
+          <h2>HackYSU Itinerary April 14-16th</h2>
+          <hr />
+          <p style="text-align: center">Coming soon!</p>
+        </section>
+        <div class="section-space"></div>
+        <section id="sponsors" class="info-section sponsors">
+          <h2>Sponsors</h2>
+          <hr />
+          <p>Tier 3 Sponsors</p>
+          <div class="icons">
+            <a
+              href="https://ysu.edu/academics/science-technology-engineering-mathematics"
+              target="_blank"
+            >
+              <img src="/images/STEMLOGONEW.png" alt="YSU STEM Icon" />
+            </a>
+          </div>
+          <p>Tier 2 Sponsors</p>
+          <div class="icons">
+            <a href="https://ybi.org/" target="_blank">
+              <img src="/images/ybi.png" alt="YBI Icon" />
+            </a>
+          </div>
+          <p>Tier 1 Sponsors</p>
+          <div class="icons">
+            <a href="https://www.birdfishbrew.com/" target="_blank">
+              <img
+                src="/images/birdFish.png"
+                alt="Bird Fish Icon"
+                style="background-color: white; border-radius: 100%"
+              />
+            </a>
+            <a href="https://www.stonefruitcoffee.com/" target="_blank">
+              <img src="/images/stonefruit.png" alt="Stone Fruit Icon" />
+            </a>
+          </div>
+          <p class="join">
+            If you are interested in joining us as a sponsor, contact us for
+            more information!
+          </p>
+        </section>
+        <div class="section-space"></div>
+        <section id="contact" class="info-section contacts">
+          <h2>Contact Us</h2>
+          <hr />
           <div>
-            <p style="margin-top: 40px;">
-Any company and non-YSU students attending the event should notify parking attendants in the M70 lot who you represent and that you are attending HackYSU. The Computer Club will be covering those costs. Current YSU students with a parking pass can park overnight in the deck or in M70.
-          </p>
-            <p style="margin-top: 40px;">
-The DeBartolo Club room is atop Stambaugh Stadium. To join us up there, cross the street from the M70 lot and walk alongside the stadium until you reach Gate C, facing the street across from McDonald’s. The elevator will be directly inside the door. Use the “P” button to take you to the Stadium Club.
-            </p>
-            <p style="margin-top: 40px;">
-If you have any issues finding your way, do not hesitate to call Sam Hofmann at 330-207-2623 or Dee Spann at 330-794-3765. You may also email us at contact@ysucomputerclub.com, message the Discord, or look for signs and a crowd.
-          </p>
-          <p style="margin-top: 40px;">
-Doors will be locked at night, except Gate C. If you can’t get in, call Sam Hofmann at 330-207-2623 or Dee Spann at 330-794-3765.
-          </p>          
+            <a href="mailto:contact@ysucomputer.com">
+              <i class="fa-solid fa-envelope fa-4x"></i>
+            </a>
+            <a href="https://www.facebook.com/ysucomputerclub" target="_blank">
+              <i class="fa-brands fa-square-facebook fa-4x"></i>
+            </a>
+            <a href="https://github.com/ysucomputerclub/" target="_blank">
+              <i class="fa-brands fa-square-github fa-4x"></i>
+            </a>
+            <a href="https://twitter.com/YSUComputer" target="_blank">
+              <i class="fa-brands fa-square-twitter fa-4x"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCOTZnlGzu_zgOfSF9WpIxRQ/playlists"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube fa-4x"></i>
+            </a>
           </div>
-          <img id="map" src="/ysumap.png" alt="map of YSU campus highlighting Stambaugh Stadium and its proximity to the M70 lot"/>
-        </div>
-      </div>    
-      <!-- HackYSU 2022 Itinerary -->
-      <div id="itinerary" class="tag"></div>
-        <div class="content left">
-          <h3>HackYSU ITINERARY April 8-10th</h3>
-          <hr style="margin: 1em;" />
-          <div class="pure-g" style="justify-content: center;">
-            <div class="pure-u-xxl-1-5 pure-u-1">
-              <div class="faqItem trigger">
-                <h3 class="faqTitle">
-                  <div class="icon">
-                    <i class="fa fa-chevron-circle-right"></i>
-                  </div>
-                  FRIDAY
-                </h3>
-              </div>
-              <table id="itinerary-grid" class="pure-table pure-table-bordered hideMe">
-                <thead>
-                  <tr>
-                    <th>Time</th>
-                    <th>Event</th>
-                    <th>Location</th>
-                    <th>Presenter</th>
-                    <th>What You'll Need</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>5:00pm</td>
-                    <td>Doors Open</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>YCC</td>
-                    <td>Your computer and an appetite</td>
-                  </tr>
-                  <tr>
-                    <td>6:00pm</td>
-                    <td>Opening Ceremony</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>YCC & YSU STEM</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>7:00pm</td>
-                    <td>Dinner</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>Chartwell's Pasta</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>8:00pm</td>
-                    <td>Teambuilding and Begin Hacking!</td>
-                    <td>President's Suite</td>
-                    <td>YCC</td>
-                    <td>A project idea or willingness to help someone else</td>
-                  </tr>
-                  <tr>
-                    <td>9:00pm</td>
-                    <td>Let's make your first website!</td>
-                    <td>President's Suite</td>
-                    <td>Joe Duncko</td>
-                    <td>VS Code, GitHub account, GitHub Desktop, Node.js LTS</td>
-                  </tr>
-                  <tr>
-                    <td>10:00pm</td>
-                    <td>Computers in Film: How computers are viewed through the decades</td>
-                    <td>President's Suite</td>
-                    <td>Hayley Shasteen</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>11:00pm</td>
-                    <td>Smash Tournament</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>YCC</td>
-                    <td>Your favorite Switch controller</td>
-                  </tr>
-                  <tr>
-                    <td>12:00am</td>
-                    <td>Midnight Snack - Cookies</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>YCC</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="pure-u-xxl-1-5" style="max-width: 10%;"></div>
-            <div class="pure-u-xxl-1-5 pure-u-1">
-              <div class="faqItem trigger">
-                <h3 class="faqTitle">
-                  <div class="icon">
-                    <i class="fa fa-chevron-circle-right"></i>
-                  </div>
-                  SATURDAY
-                </h3>
-              </div>
-              <table id="itinerary-grid" class="pure-table pure-table-bordered hideMe">
-                <thead>
-                  <tr>
-                    <th>Time</th>
-                    <th>Event</th>
-                    <th>Location</th>
-                    <th>Presenter</th>
-                    <th>What You'll Need</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>9:00am</td>
-                    <td>Breakfast - Pastries and Coffee</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>YCC</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>12:00pm</td>
-                    <td>Building an API in Python</td>
-                    <td>President's Suite</td>
-                    <td>Chris Palmer</td>
-                    <td>Latest version of Python, your favorite text editor or IDE</td>
-                  </tr>
-                  <tr>
-                    <td>1:00pm</td>
-                    <td>Lunch</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>Dave's Cosmic Subs</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2:00pm</td>
-                    <td>Getting started with Microcontrollers</td>
-                    <td>President's Suite</td>
-                    <td>James Dittrich</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>3:00pm</td>
-                    <td>Let's make an interactive web app with React!</td>
-                    <td>President's Suite</td>
-                    <td>Joe Duncko</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>7:00pm</td>
-                    <td>Dinner</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>Chipotle</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>8:00pm</td>
-                    <td>Version Control with git and Github</td>
-                    <td>President's Suite</td>
-                    <td>Adam Nickells</td>
-                    <td>GitHub account, GitHub Desktop or git-cli</td>
-                  </tr>
-                  <tr>
-                    <td>11:00pm</td>
-                    <td>LAN Party</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>YCC</td>
-                    <td>Console or PC, controllers, etc.</td>
-                  </tr>
-                  <tr>
-                    <td>12:00am</td>
-                    <td>Midnight Snack - Cookies</td>
-                    <td>DeBartolo Stadium Club</td>
-                    <td>YCC</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="pure-u-xxl-1-5" style="max-width: 10%;"></div>
-            <div class="pure-u-xxl-1-5 pure-u-1">
-                <div class="faqItem trigger">
-                  <h3 class="faqTitle">
-                    <div class="icon">
-                      <i class="fa fa-chevron-circle-right"></i>
-                    </div>
-                    SUNDAY
-                  </h3>
-                </div>
-                <table id="itinerary-grid" class="pure-table pure-table-bordered hideMe">
-                  <thead>
-                    <tr>
-                      <th>Time</th>
-                      <th>Event</th>
-                      <th>Location</th>
-                      <th>Presenter</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>9:00am</td>
-                      <td>Breakfast - Pastries and Coffee</td>
-                      <td>DeBartolo Stadium Club</td>
-                      <td>YCC</td>
-                    </tr>
-                    <tr>
-                      <td>10:00am</td>
-                      <td>Hacking Ends - submit projects and prepare to present</td>
-                      <td>DeBartolo Stadium Club</td>
-                      <td>YCC</td>
-                    </tr>
-                    <tr>
-                      <td>11:00am</td>
-                      <td>Presentations & Judging</td>
-                      <td>DeBartolo Stadium Club</td>
-                      <td>You and your team</td>
-                    </tr>
-                    <tr>
-                      <td>12:30pm</td>
-                      <td>Lunch</td>
-                      <td>DeBartolo Stadium Club</td>
-                      <td>Dave's Cosmic Subs</td>
-                    </tr>
-                    <tr>
-                      <td>1:00pm</td>
-                      <td>Awards & Closing Ceremony</td>
-                      <td>DeBartolo Stadium Club</td>
-                      <td>YCC & YSU STEM</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- hideMe funcion moved to hide Itinerary on start -->
-      <script>
-        $(".hideMe").hide();
-        $(document).on("click", ".trigger", function (event) {
-          event.preventDefault();
-          if ($(this).hasClass("active")) $(this).removeClass("active");
-          else $(this).addClass("active");
-          $(this).next(".hideMe").slideToggle(200);
-        });
-        $('a[href^="#"]').on("click", function (e) {
-          e.preventDefault();
-          var target = this.hash;
-          $target = $(target);
-          $("html, body")
-            .stop()
-            .animate(
-              {
-                scrollTop: $target.offset().top,
-              },
-              700,
-              "swing",
-              function () {
-                window.location.hash = target;
-              }
-            );
-        });
-      </script>
-      <!-- <div id="itinerary" class="tag"></div>
-      <div class="content right">
-        <h2>ITINERARY</h2>
-        <h3>FRIDAY</h3>
-        <div class="time">
-          <h3>6:00PM</h3>
-          <p>Event Begins</p>
-        </div>
-        <div class="time">
-          <h3>7:00PM</h3>
-          <p>Opening Ceremony</p>
-        </div>
-        <div class="time">
-          <h3>7:30PM</h3>
-          <p>Teambuilding</p>
-        </div>
-        <div class="time">
-        <h3>8:00PM</h3>
-        <p>Dinner</p>
-      </div>
-      <div class="time">
-        <h3>9:00PM</h3>
-        <p>Hacking Begins</p>
-      </div>
-        <div class="time">
-          <h3>9:30PM</h3>
-          <p>'Intro to Java Spring Boot API Servers' with Nick Iovino</p>
-        </div>
-        <div class="time">
-          <h3>10:00PM</h3>
-          <p>'Owning your Data' with Nick Bates</p>
-        </div>
-        <div class="time">
-          <h3>11:00PM</h3>
-          <p>Games/League of Legends Tournament/Ice breaker</p>
-        </div>
-        <h3>SATURDAY</h3>
-        <div class="time">
-        <h3>12:00AM</h3>
-        <p>Midnight Snack</p>
-      </div>
-        <div class="time">
-        <h3>8:00AM</h3>
-        <p>Breakfast</p>
-      </div>
-        <div class="time">
-        <h3>12:00PM</h3>
-        <p>Lunch time</p>
-      </div>
-        <div class="time">
-          <h3>9:00AM</h3>
-          <p>'DIY With Raspberry Pi' with Anthony Hake</p>
-        </div>
-        <div class="time">
-          <h3>10:00AM</h3>
-          <p>'Intro to Live Coding Music with Sonic Pi' with Chris Palmer</p>
-        </div>
-        <div class="time">
-          <h3>11:00AM</h3>
-          <p>'Fake it Till You Make it' with James Dittrich</p>
-        </div>
-        <div class="time">
-          <h3>1:00PM</h3>
-          <p>'Let's make your first website!' with Joe Duncko</p>
-        </div>
-        <div class="time">
-          <h3>6:00PM</h3>
-          <p>Hacking Ends</p>
-        </div>
-        <div class="time">
-          <h3>6:30PM</h3>
-          <p>Judging Begins</p>
-        </div>
-        <div class="time">
-          <h3>7:30PM</h3>
-          <p>Award Ceremony</p>
-        </div>
-        <div class="time">
-          <h3>8:00PM</h3>
-          <p>Event Ends</p>
-        </div>
-        <h3>SUNDAY</h3>
-      <div class="time">
-        <h3>12:00AM</h3>
-        <p>Cup Stacking</p>
-      </div>
-      <div class="time">
-        <h3>8:00AM</h3>
-        <p>Breakfast</p>
-      </div>
-      <div class="time">
-        <h3>9:00AM</h3>
-        <p>Hacking Ends</p>
-      </div>
-      <div class="time">
-        <h3>11:00AM</h3>
-        <p>Hack Expo</p>
-      </div>
-      <div class="time">
-        <h3>12:00PM</h3>
-        <p>Lunch</p>
-      </div>
-      <div class="time">
-        <h3>12:30PM</h3>
-        <p>Awards Ceremony</p>
-      </div>
-        <p>
-          All times are approximate and may be subject to changes based on
-          availability or unforseen events.
-        </p>
-      </div> -->
-      <!-- <div id="directions" class="tag"></div>
-			<div class="content left">
-				<h2>DIRECTIONS</h2>
-				<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.1497752514247!2d-80.65234238539814!3d41.10941992114518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8833e5999140bd7b%3A0xa2b9756c5db889a0!2sStambaugh+Stadium!5e0!3m2!1sen!2sus!4v1448377599260" width="100%" height="100%" frameborder="0" style="border:0; max-width: 800px;"></iframe>
-				</div>
-			</div> -->
-
-      <div id="sponsorship" class="tag"></div>
-      <div class="tag"></div>
-      <div class="content left">
-        <h2>TITLE SPONSOR</h2>
-        <div class="sponsors">
-          
-          <a
-            href="https://ysu.edu/academics/science-technology-engineering-mathematics"
-            class="sponsor"
-            target="_blank"
-            ><img title="YSU STEM" src="./images/SponsorLogos2022/STEMLOGONEW.png"
-          /></a>
-
-          <!--<a href="https://oar.net" class="sponsor" target="_blank"><img title="OARNet" src="./images/oarnet.png"></a>-->
-
-          <!--<a href="https://www.ntconcepts.com/" class="sponsor" target="_blank"><img title="NTConcepts" src="./images/newlogo.png"></a>-->
-<!--
-          <a
-            href="https://ysu.edu/academics/science-technology-engineering-mathematics"
-            class="sponsor"
-            target="_blank"
-            ><img title="YSU STEM" src="./images/STEMLOGONEW.png"
-          /></a>-->
-        </div>
-        <h3>TIER 2 SPONSORS</h3>
-        <div class="sponsors">
-          <!--<a href="https://www.fedex.com/" class="sponsor sponsorT2" target="_blank"><img title="FedEx" src="./images/fedex.png"></a>-->
-
-          <!--<a href="https://lbry.io/" class="sponsor sponsorT2" target="_blank"><img title="LBRY Inc." src="./images/lbry.png"></a>-->
-<!--
-          <a
-            href="https://sga.ysu.edu/"
-            class="sponsor sponsorT2"
-            target="_blank"
-            ><img
-              title="YSU Student Government Association"
-              src="./images/sgaSeal.png"
-          /></a>
--->
-          <a
-          href="https://ybi.org/"
-          class="sponsor sponsorT2"
-          target="_blank"
-          ><img
-            title="Youngstown Business Incubator"
-            src="./images/ybi.png"
-        /></a>
-          <a
-          href="http://sga.ysu.edu/"
-          class="sponsor sponsorT2" 
-          target="_blank"
-          >
-          <img title="YSU SGA" src="./images/sgaSeal.png"/>
-          </a>
-          <a href="https://pdmi.com/" 
-          class="sponsor sponsorT2" 
-          target="_blank"
-          ><img
-              title="Pharmacy Data Managemnt, Inc."
-              src="images/SponsorLogos2022/PDMI_FullColor_circle.png"
-          /></a>
-          <a href="https://45press.com/" 
-          class="sponsor sponsorT2" 
-          target="_blank"
-          ><img
-              title="45Press"
-              src="images/SponsorLogos2022/45press_circle.png"
-          /></a>
-        <a
-        href="https://sensourceinc.com/"
-        class="sponsor sponsorT2"
-        target="_blank"
-        ><img
-          title="SenSource Inc"
-          src="./images/sensource.png"
-      /></a>
-
-          <!--<a href="https://csis.ysu.edu/" class="sponsor sponsorT2" target="_blank"><img title="YSU CSIS" src="./images/csis.png"></a>-->
-
-          <!--<a href="https://www.pdmi.com/" class="sponsor sponsorT2" target="_blank"><img src="./images/pdmi2.png" alt=""></a>-->
-        </div>
-        <!-- <h3>TIER 1 SPONSORS</h3> -->
-					<div class="sponsors">
-						
-					</div>
-
-          <h3>"IN-KIND" SPONSORS</h3>
-				<div class="sponsors">
-					<a href="https://www.birdfishbrew.com/" class="sponsor sponsorT3" target="_blank" ><img title="Birdfish Brewing Company" src="./images/birdFish.png"></a>
-
-					<!--<a href="https://https://butlerart.com/collections-cafe/" class="sponsor food" target="_blank"><img title="Collections Cafe" src="./images/collections.png"></a>-->
-
-        <a href="https://stonefruitcoffee.com" class="sponsor sponsorT3" target="_blank"><img title="Stone Fruit Coffee Co" src="./images/stonefruit.png"></a>
-        <a href="https://www.innovarsystems.com/" class="sponsor sponsorT3" target="_blank"><img title="Innovar Systems Limited" src="./images/SponsorLogos2022/InnovarLogoBlack.png"></a>
-				<!--<a href="https://thegentrycatering.com" class="sponsor food" target="_blank"><img title="The Gentry" src="./images/gentry.png"></a>
-
-					<a href="https://www.facebook.com/Casseses-MVR-238316706192736/" class="sponsor food" target="_blank"><img title="Cassese's Mahoning Valley Restaurant" src="./images/mvr.png"></a>
-					
-					<br> 
-					
-					<a href="https://ysu.edu/mcdonough-museum" class="sponsor food" target="_blank"><img title="McDonough Museum of Art" src="./images/mdma.png"></a>
-
-					<a href="https://www.facebook.com/koconsultingllc/" class="sponsor food" target="_blank"><img title="KO Consulting" src="./images/KOwebsite.png"></a>
-
-					<a href="https://cms.ysu.edu/launch-lab/launch-lab" class="sponsor food" target="_blank"><img title="YSU Launch Lab" src="./images/mg_logo_colors_large.png"></a>
-					<a href="https://oakhillcollaborative.org/" class="sponsor food" target="_blank"><img title="Oak Hill Collaborative" src="./images/oakhill.png"></a>
-					<a href="https://www.wafflehouse.com/" class="sponsor food" target="_blank"><img title="Waffle House" src="./images/wafflehouse.png"></a>
-					<a href="https://brite.org/" class="sponsor food" target="_blank"><img title="BRITE" src="./images/BRITE.png"></a>
-
-				</div>-->
-
-        <!-- Affiliates -->
-        <p>
-          If you are interested in joining us as a Sponsor,
-          <a target="_blank" href="mailto:contact@ysucomputerclub.com"
-            >contact us</a
-          >
-          for more information!
-        </p>
-      </div>
-      <div id="social" class="tag"></div>
-      <div class="social content right">
-        <h2>CONTACT US<br>
-        
-          <a class="icon" title="Email" href="mailto:contact@ysucomputerclub.com" target="_blank"><span class="fas fa-envelope fa-3x"></span></a>
-          <a class="icon" title="Facebook" href="https://www.facebook.com/ysucomputerclub" target="_blank"><span class="fab fa-facebook-square fa-3x"></span></a>
-          <a class="icon" title="GitHub" href="https://github.com/ysucomputerclub/" target="_blank"><span class="fab fa-github fa-3x"></span></a>
-          <a class="icon" title="Twitter" href="https://twitter.com/YSUComputer"><span class="fab fa-twitter-square fa-3x"></span></a>
-          <a class="icon" title="Youtube" href="https://youtube.com/channel/UCOTZnlGzu_zgOfSF9WpIxRQ/playlists"><span class="fab fa-youtube fa-3x"></span></a>
-
-        </h2>
-        <div style="clear: both" />
-        <p>
-          Any questions that weren't answered in the FAQ's? Send us an email at <a href="mailto:contact@ysucomputerclub.com">contact@ysucomputerclub.com</a> and
-          we'll get back to you soon!
-        </p>
-      </div>
+        </section>
+      </main>
     </div>
-    <div id="footer">
-      <div>
-        <strong>HackYSU</strong> 2015 - 2021<br />
-        An initiative of the
-        <a href="https://ysucomputerclub.com"
-          ><strong>YSU Computer Club</strong></a
-        ><br />
-        <p>
-          <a class="icon" title="Fork this site" href="https://github.com/ysucomputerclub/hackysu.com" target="_blank"><i class="fas fa-code-branch"></i></a>
-        </p>      
-      </div>
-      <!--<p>Powered by
-				<br /><a href="https://mlh.io" style="width: 5em; margin: 0.25em" target="_blank"><img title="Major League Hacking" style="width: 100%" src="./images/mlh-logo.png"></a>
-				<a href="https://hackysu2016.devpost.com/" target="_blank"><img src="https://devpost0.assetspost.com/assets/reimagine2/devpost-logo-646bdf6ac6663230947a952f8d354cad.svg"  style="width: 8em; padding-bottom: 1em;" title="Devpost Page"></a>
-			</p>-->
-    </div>
-
-    <script async defer src="https://sa.hackysu.com/latest.js"></script>
-    <noscript
-      ><img src="https://sa.hackysu.com/noscript.gif" alt=""
-    /></noscript>
+    <footer>
+      <p>HackYSU 2015 - 2023</p>
+      <p>An initiative of the YSU Computer Club</p>
+    </footer>
   </body>
 </html>
+
+<script>
+  var acc = document.getElementsByClassName("faq-item");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+</script>

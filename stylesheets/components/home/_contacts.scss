@@ -1,0 +1,21 @@
+.contacts {
+  div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+      margin: 0 1rem;
+      transition: margin 0.2s ease-in-out;
+      i {
+        color: white;
+      }
+    }
+    a:hover {
+      margin: 0 2rem;
+      transition: margin 0.2s ease-in-out;
+      i {
+        color: #ccc;
+      }
+    }
+  }
+}
