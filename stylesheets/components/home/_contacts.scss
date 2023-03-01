@@ -4,14 +4,21 @@
     justify-content: center;
     flex-wrap: wrap;
     a {
-      margin: 0 1rem;
+      margin: 0 0.5rem;
       transition: margin 0.2s ease-in-out;
       i {
         color: white;
+        font-size: 3rem;
+      }
+      @include breakpoint("small") {
+        i {
+          font-size: 5rem;
+          margin: 0 0.75rem;
+        }
       }
     }
     a:hover {
-      margin: 0 2rem;
+      margin: 0 1.5rem;
       transition: margin 0.2s ease-in-out;
       i {
         color: #ccc;
