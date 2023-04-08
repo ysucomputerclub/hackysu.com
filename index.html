@@ -348,4 +348,19 @@
       }
     });
   }
+
+  var acc = document.getElementsByClassName("day-item");
+  var j;
+
+  for (j = 0; j < acc.length; j++) {
+    acc[j].addEventListener("click", function () {
+      this.classList.toggle("show");
+      var dayItem = this.nextElementSibling;
+      if (dayItem.style.maxHeight) {
+        dayItem.style.maxHeight = null;
+      } else {
+        dayItem.style.maxHeight = dayItem.scrollHeight + "px";
+      }
+    });
+  }
 </script>
