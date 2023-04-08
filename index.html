@@ -253,32 +253,10 @@
           </div>
         </section>
         <div class="section-space"></div>
-        <section id="itinerary" class="info-section itinerary">
+        <section id="itinerary" class="info-section">
           <h2>HackYSU Itinerary April 14-16th</h2>
           <hr />
-          <ul>
-            <li class="day-item">
-              <p>Friday</p>
-              <i class="fa-solid fa-angle-down"></i>
-            </li>
-            <div class="day-table">
-              <img src="/images/Friday.png" />
-            </div>
-            <li class="day-item">
-              <p>Saturday</p>
-              <i class="fa-solid fa-angle-down"></i>
-            </li>
-            <div class="day-table">
-              <img src="/images/Saturday.png" />
-            </div>
-            <li class="day-item">
-              <p>Sunday</p>
-              <i class="fa-solid fa-angle-down"></i>
-            </li>
-            <div class="day-table">
-              <img src="/images/Sunday.png" />
-            </div>
-          </ul>
+          <p style="text-align: center">Coming soon!</p>
         </section>
         <div class="section-space"></div>
         <section id="sponsors" class="info-section sponsors">
@@ -356,32 +334,17 @@
 </html>
 
 <script>
-  var faq = document.getElementsByClassName("faq-item");
+  var acc = document.getElementsByClassName("faq-item");
   var i;
 
-  for (i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function () {
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  }
-
-  var acc = document.getElementsByClassName("day-item");
-  var j;
-
-  for (j = 0; j < acc.length; j++) {
-    acc[j].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var dayItem = this.nextElementSibling;
-      if (dayItem.style.maxHeight) {
-        dayItem.style.maxHeight = null;
-      } else {
-        dayItem.style.maxHeight = dayItem.scrollHeight + "px";
       }
     });
   }
