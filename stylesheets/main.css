@@ -24,7 +24,6 @@ body {
   font-family: "Arvo", sans-serif;
   font-size: 1.25em;
   background-color: #1c1c1c;
-  background-image: url("images/background-dark.png");
 }
 
 p,
@@ -298,12 +297,12 @@ header nav ul li {
   border-bottom: 1px solid white;
   text-align: left;
 }
-.itinerary .active,
+.itinerary .show,
 .itinerary li:hover {
   border-color: #ccc;
 }
-.itinerary .active p,
-.itinerary .active i,
+.itinerary .show p,
+.itinerary .show i,
 .itinerary li:hover p,
 .itinerary li:hover i {
   color: #ccc;

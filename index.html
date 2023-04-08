@@ -376,7 +376,7 @@
 
   for (j = 0; j < acc.length; j++) {
     acc[j].addEventListener("click", function () {
-      this.classList.toggle("active");
+      this.classList.toggle("show");
       var dayItem = this.nextElementSibling;
       if (dayItem.style.maxHeight) {
         dayItem.style.maxHeight = null;
