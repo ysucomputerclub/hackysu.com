@@ -327,4 +327,40 @@ header nav ul li {
   border-radius: 20px;
   width: 100%;
   height: auto;
+}
+
+.winners h2 {
+  color: white;
+  font-size: 36px;
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .winners h2 {
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, rgb(245, 42, 42), rgb(200, 57, 191));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+  }
+}
+.winners ol {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+}
+.winners ol .last {
+  border-bottom: none;
+}
+.winners ol li {
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid transparent;
+  -o-border-image: linear-gradient(0.25turn, rgb(111, 34, 255), rgb(255, 0, 128), rgba(56, 2, 155, 0));
+     border-image: linear-gradient(0.25turn, rgb(111, 34, 255), rgb(255, 0, 128), rgba(56, 2, 155, 0));
+  border-image-slice: 1;
+  width: 100%;
+}
+.winners ol .place {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */
