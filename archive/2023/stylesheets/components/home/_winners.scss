@@ -1,0 +1,46 @@
+.winners {
+  // fallback for IE
+  h2 {
+    color: white;
+    font-size: 36px;
+  }
+  @supports (background-clip: text) {
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        45deg,
+        rgb(245, 42, 42),
+        rgb(200, 57, 191)
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  ol {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+    .last {
+      border-bottom: none;
+    }
+    li {
+      margin: 1rem 0;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(
+        0.25turn,
+        rgb(111, 34, 255),
+        rgba(255, 0, 128),
+        rgba(56, 2, 155, 0)
+      );
+      border-image-slice: 1;
+      width: 100%;
+    }
+    .place {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,17 +1,20 @@
 .hero {
   display: block;
-  margin: 0 auto;
-  padding: 5rem 0;
   text-align: center;
-  background-image: linear-gradient(
-      360deg,
-      rgba(28, 28, 28, 0.76) 0%,
-      #141414 100%
-    ),
-    url("/images/circuit-bg.png");
+  background-image: url("/images/background.png");
   width: 100%;
   color: white;
   p {
     margin: 1rem 0;
+  }
+  .content {
+    padding: 5rem 0;
+    margin: 0 auto;
+    img {
+      max-width: 430px;
+      width: 100%;
+      height: auto;
+      padding: 0 1rem;
+    }
   }
 }

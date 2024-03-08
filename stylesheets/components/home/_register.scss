@@ -1,26 +1,56 @@
 .register {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  h2 {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hr {
+    margin: 0 2rem;
+    border: 1px solid black;
+  }
   a {
     margin: 0.5rem 1rem;
     padding: 1rem;
+    @include breakpoint("medium") {
+      font-size: 32px;
+      padding: 1rem 2rem;
+    }
     border-radius: 1rem;
     border: 4px solid transparent;
     background: linear-gradient(#131313, #131313) padding-box,
-      linear-gradient(to right bottom, rgb(191, 42, 42), rgb(42, 57, 191))
+      linear-gradient(to right bottom, $star-yellow, rgb(42, 57, 191))
         border-box;
   }
   a:hover {
     color: white;
     text-decoration: none;
-    background: linear-gradient(
-          to right bottom,
-          rgb(191, 42, 42),
-          rgb(42, 57, 191)
-        )
+    background: linear-gradient(to right bottom, $star-yellow, rgb(42, 57, 191))
         padding-box,
-      linear-gradient(to right bottom, rgb(191, 42, 42), rgb(42, 57, 191))
+      linear-gradient(to right bottom, $star-yellow, rgb(42, 57, 191))
         border-box;
+  }
+  .sponsor {
+    background-color: white;
+    border-radius: 20px;
+    h2,
+    p {
+      color: black;
+    }
+    h2 {
+      padding: 1rem 2rem;
+    }
+    p {
+      padding: 1rem 2rem;
+    }
+    margin-top: 2rem;
+    padding: 2rem 0;
+    img {
+      width: 150px;
+      margin: 0 1rem;
+    }
   }
 }

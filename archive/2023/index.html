@@ -33,10 +33,7 @@
       property="og:description"
       content="The offical Youngstown State Universty Hackathon."
     />
-    <meta
-      property="og:image"
-      content="https://hackysu.com/images/2024logo.png"
-    />
+    <meta property="og:image" content="https://hackysu.com/images/logo.svg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -48,68 +45,74 @@
     />
     <meta
       property="twitter:image"
-      content="https://hackysu.com/images/2024logo.png"
+      content="https://hackysu.com/images/logo.svg"
     />
-    <link rel="icon" href="/images/2024logo.png" />
+    <link rel="icon" href="/images/logo.svg" />
     <title>HackYSU</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="https://ysucomputerclub.com/" target="_blank"
+              >YSU Computer Club</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="hero">
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <a href="#faq">FAQ</a>
-            </li>
-            <li>
-              <a href="#sponsors">Sponsors</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <li>
-              <a href="https://ysucomputerclub.com/" target="_blank"
-                >YSU Computer Club</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="content">
-        <h1>Welcome to HackYSU 2024</h1>
-        <p>April 5 - 7th</p>
-        <img src="/images/2024logo.png" alt="HackYSU 2023 Logo" />
-      </div>
+      <h1>Welcome to HackYSU 2023</h1>
+      <p>April 14 - 16th</p>
+      <img src="/images/logo.svg" alt="HackYSU 2023 Logo" />
     </div>
     <div class="section-space"></div>
     <div class="page-container">
       <main>
-        <section class="register">
-          <h2>Please register at the forms below:</h2>
-          <div class="links">
-            <a
-              target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdTQPd8zc5Qj-yW-VKtP2ZGQ0W-aJ4SrV2vbZd5frn6F_zG0A/formResponse"
-              >Student</a
-            >
-            <a
-              target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdVCS764E-SY202pDr7HKxJ_VuxF1qrKOKLEF4FI1bVDtGN2Q/viewform"
-              >Mentor/Judge</a
-            >
-          </div>
-          <div class="sponsor">
-            <h2>We are still accepting sponsors!</h2>
-            <div class="hr"></div>
-            <p>
-              A large majority of attendees are junior and senior college
-              students who are looking for jobs in the computer science, IT, and
-              hardware engineering fields. As a tier 2 sponsor, you get their
-              resumes! To inquire about other benefits, email us at
-              contact@ysucomputerclub.com
-            </p>
-          </div>
-        </section>
+        <div id="winners" class="winners">
+          <h2>2023 Winners!</h2>
+          <ol>
+            <li>
+              <p class="place">First Place</p>
+              <p>Project: <strong>ASLingo</strong></p>
+              <p>
+                Team: Tien Hoang, Nick Winsen, Ethan Slick, Anthony Micco, Nick
+                Ott
+              </p>
+            </li>
+            <li>
+              <p class="place">Second Place</p>
+              <p>Project: <strong>Tinder Bot</strong></p>
+              <p>Team: Alexander Culp, Aaron Strock, Noah Diana</p>
+            </li>
+            <li>
+              <p class="place">Third Place</p>
+              <p>Project: <strong>Tiptower</strong></p>
+              <p>Team: Antonio Cotto, Mike Landsberger, Briar Rhoads</p>
+            </li>
+            <li>
+              <p>Dev Youngstown Sponsored Category</p>
+              <p class="place">Best use of React and/or FastAPI</p>
+              <p>Project: <strong>Online Leaderboards</strong></p>
+              <p>Team: Joe Jarvis and Sam Macchione</p>
+            </li>
+            <li class="last">
+              <p class="place">Honorable Mention</p>
+              <p>Project: <strong>Bread Winners</strong></p>
+              <p>Team: Michael Prather, Declan Sekol, Madison Wigley</p>
+            </li>
+          </ol>
+        </div>
         <div class="section-space"></div>
         <section id="faq" class="info-section">
           <h2>Frequently Asked Questions</h2>
@@ -261,35 +264,25 @@
           <hr />
           <p>
             Any company and non-YSU students attending the event should notify
-            parking attendants in the M30 deck who you represent and that you
-            are attending HackYSU. The Computer Club will be covering those
-            costs. Current YSU students with a parking pass can park overnight.
+            parking attendants in the M70 lot who you represent and that you are
+            attending HackYSU. The Computer Club will be covering those costs.
+            Current YSU students with a parking pass can park overnight in the
+            deck or in M70.
           </p>
           <p>
-            The M30 parking deck will be located on Wick Avenue and the event
-            will be held in Meshel Hall 3rd floor. Meshel Hall can be accessed
-            via the pedestrian bridge located on the 4th floor of the parking
-            deck.
+            The DeBartolo Club room is atop Stambaugh Stadium. To join us up
+            there, cross the street from the M70 lot and enter through Gate C,
+            the elevator will be directly on the left.
           </p>
           <div class="image">
-            <img src="/images/HackYSU-map.png" alt="YSU Campus Map" />
+            <img src="/images/ysu-map.jpg" alt="YSU Campus Map" />
           </div>
         </section>
         <div class="section-space"></div>
         <section id="itinerary" class="info-section itinerary">
-          <h2>HackYSU Itinerary April 5-7th</h2>
+          <h2>HackYSU Itinerary April 14-16th</h2>
           <hr />
-          <p
-            style="
-              text-align: center;
-              font-size: 1.5rem;
-              font-weight: 600;
-              margin-bottom: 2rem;
-            "
-          >
-            Coming soon!
-          </p>
-          <!-- <ul>
+          <ul>
             <li class="day-item">
               <p>Friday</p>
               <i class="fa-solid fa-angle-down"></i>
@@ -311,13 +304,13 @@
             <div class="day-table">
               <img src="/images/Sunday.png" />
             </div>
-          </ul> -->
+          </ul>
         </section>
         <div class="section-space"></div>
         <section id="sponsors" class="info-section sponsors">
           <h2>Sponsors</h2>
           <hr />
-          <!-- <p>Tier 3 Sponsors</p>
+          <p>Tier 3 Sponsors</p>
           <div class="icons">
             <a
               href="https://ysu.edu/academics/science-technology-engineering-mathematics"
@@ -325,8 +318,8 @@
             >
               <img src="/images/STEMLOGONEW.png" alt="YSU STEM Icon" />
             </a>
-          </div> -->
-          <!-- <p>Tier 2 Sponsors</p>
+          </div>
+          <p>Tier 2 Sponsors</p>
           <div class="icons">
             <a href="https://ybi.org/" target="_blank">
               <img src="/images/ybi.png" alt="YBI Icon" />
@@ -334,8 +327,8 @@
             <a href="https://pdmi.com/" target="_blank">
               <img src="/images/PDMI.png" alt="PDMI Icon" />
             </a>
-          </div> -->
-          <!-- <p>Tier 1 Sponsors</p>
+          </div>
+          <p>Tier 1 Sponsors</p>
           <div class="icons">
             <a href="https://www.birdfishbrew.com/" target="_blank">
               <img
@@ -350,7 +343,7 @@
             <a class="dev" href="https://www.youngstown.dev/" target="_blank">
               <img src="/images/DevYoungstown.png" alt="Dev Youngstown Icon" />
             </a>
-          </div> -->
+          </div>
           <p class="join">
             If you are interested in joining us as a sponsor,
             <a href="mailto:contact@ysucomputerclub.com">contact us</a> for more
@@ -385,7 +378,7 @@
       </main>
     </div>
     <footer>
-      <p>HackYSU 2015 - 2024</p>
+      <p>HackYSU 2015 - 2023</p>
       <p>An initiative of the YSU Computer Club</p>
     </footer>
   </body>

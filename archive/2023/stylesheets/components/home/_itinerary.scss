@@ -1,0 +1,44 @@
+.itinerary {
+  ul {
+    margin-bottom: 10px;
+  }
+  i {
+    color: white;
+  }
+  .day-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background: none;
+    padding: 1rem 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: left;
+  }
+  .active,
+  li:hover {
+    p,
+    i {
+      color: #ccc;
+    }
+    border-color: #ccc;
+  }
+
+  .day-table {
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  padding: 10px;
+  @include breakpoint("medium") {
+    padding: 0px 100px;
+  }
+  img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  }
+}
