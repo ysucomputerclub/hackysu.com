@@ -279,16 +279,19 @@ header nav ul li {
   text-align: center;
   padding-bottom: 3rem;
 }
+.register .contact {
+  color: black;
+  text-decoration: underline;
+}
+.register .contact:hover {
+  color: rgb(163, 163, 163);
+}
 .register .links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.register .hr {
-  margin: 0 2rem;
-  border: 1px solid black;
-}
-.register a {
+.register .links a {
   margin: 0.5rem 1rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -296,15 +299,19 @@ header nav ul li {
   background: linear-gradient(#131313, #131313) padding-box, linear-gradient(to right bottom, #f3ff00, rgb(42, 57, 191)) border-box;
 }
 @media (min-width: 760px) {
-  .register a {
+  .register .links a {
     font-size: 32px;
     padding: 1rem 2rem;
   }
 }
-.register a:hover {
+.register .links a:hover {
   color: white;
   text-decoration: none;
   background: linear-gradient(to right bottom, #f3ff00, rgb(42, 57, 191)) padding-box, linear-gradient(to right bottom, #f3ff00, rgb(42, 57, 191)) border-box;
+}
+.register .hr {
+  margin: 0 2rem;
+  border: 1px solid black;
 }
 .register .sponsor {
   background-color: white;

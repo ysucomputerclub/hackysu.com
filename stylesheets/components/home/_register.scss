@@ -3,35 +3,46 @@
     text-align: center;
     padding-bottom: 3rem;
   }
+  .contact {
+    color: black;
+    text-decoration: underline;
+  }
+  .contact:hover {
+    color: rgb(163, 163, 163);
+  }
   .links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    a {
+      margin: 0.5rem 1rem;
+      padding: 1rem;
+      @include breakpoint("medium") {
+        font-size: 32px;
+        padding: 1rem 2rem;
+      }
+      border-radius: 1rem;
+      border: 4px solid transparent;
+      background: linear-gradient(#131313, #131313) padding-box,
+        linear-gradient(to right bottom, $star-yellow, rgb(42, 57, 191))
+          border-box;
+    }
+    a:hover {
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(
+            to right bottom,
+            $star-yellow,
+            rgb(42, 57, 191)
+          )
+          padding-box,
+        linear-gradient(to right bottom, $star-yellow, rgb(42, 57, 191))
+          border-box;
+    }
   }
   .hr {
     margin: 0 2rem;
     border: 1px solid black;
-  }
-  a {
-    margin: 0.5rem 1rem;
-    padding: 1rem;
-    @include breakpoint("medium") {
-      font-size: 32px;
-      padding: 1rem 2rem;
-    }
-    border-radius: 1rem;
-    border: 4px solid transparent;
-    background: linear-gradient(#131313, #131313) padding-box,
-      linear-gradient(to right bottom, $star-yellow, rgb(42, 57, 191))
-        border-box;
-  }
-  a:hover {
-    color: white;
-    text-decoration: none;
-    background: linear-gradient(to right bottom, $star-yellow, rgb(42, 57, 191))
-        padding-box,
-      linear-gradient(to right bottom, $star-yellow, rgb(42, 57, 191))
-        border-box;
   }
   .sponsor {
     background-color: white;
