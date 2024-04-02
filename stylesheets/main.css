@@ -234,7 +234,7 @@ header nav ul li {
 }
 .sponsors img:hover {
   border-radius: 50%;
-  border: 4px solid red;
+  border: 4px solid #f3ff00;
 }
 .sponsors .dev img:hover {
   border-radius: 0%;
@@ -312,26 +312,6 @@ header nav ul li {
 .register .hr {
   margin: 0 2rem;
   border: 1px solid black;
-}
-.register .sponsor {
-  background-color: white;
-  border-radius: 20px;
-  margin-top: 2rem;
-  padding: 2rem 0;
-}
-.register .sponsor h2,
-.register .sponsor p {
-  color: black;
-}
-.register .sponsor h2 {
-  padding: 1rem 2rem;
-}
-.register .sponsor p {
-  padding: 1rem 2rem;
-}
-.register .sponsor img {
-  width: 150px;
-  margin: 0 1rem;
 }
 
 .itinerary {
