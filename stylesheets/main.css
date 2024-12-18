@@ -307,7 +307,7 @@ header nav ul li {
 .register .links a:hover {
   color: white;
   text-decoration: none;
-  background: linear-gradient(to right bottom, #f3ff00, rgb(42, 57, 191)) padding-box, linear-gradient(to right bottom, #ef05f7, rgb(42, 57, 191)) border-box;
+  background: linear-gradient(to right bottom, #ef05f7, rgb(42, 57, 191)) padding-box, linear-gradient(to right bottom, #ef05f7, rgb(42, 57, 191)) border-box;
 }
 .register .hr {
   margin: 0 2rem;
